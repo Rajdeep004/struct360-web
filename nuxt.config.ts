@@ -6,5 +6,8 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "nuxt-icon-tw",
     "nuxt-headlessui"
-  ]
+  ],
+  colorMode: {
+    preference: 'light'
+  }
 })
