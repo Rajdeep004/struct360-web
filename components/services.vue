@@ -43,11 +43,11 @@ const services = [
 ]
 </script>
 
-<template #services>
-    <UContainer as="section">
+<template >
+    <UContainer id="services" as="section" >
         <div class="mb-12">
             <h5 class="h5">Our Services</h5>
-            <h2 class="h2 mt-6 uppercase">We are a <span class="h2 underline underline-offset-3 decoration-8 decoration-fuchsia-400"> Customer Service </span>Organisation</h2>
+            <h2 class="h2 mt-6 uppercase">We are a <span class="h2 underline underline-offset-3 decoration-8 decoration-accent/80"> Customer Service </span>Organisation</h2>
             <h3 class="h3 mt-2">that provides ...</h3>
         </div>
         
