@@ -47,7 +47,7 @@ const services = [
     <UContainer id="services" as="section" >
         <div class="mb-12">
             <h5 class="h5">Our Services</h5>
-            <h2 class="h2 mt-6 uppercase">We are a <span class="h2 underline underline-offset-3 decoration-8 decoration-accent/80"> Customer Service </span>Organisation</h2>
+            <h2 class="h2 mt-6 uppercase">We are a <span class="h2 underline underline-offset-3 decoration-8 decoration-accent/50"> Customer Service </span>Organisation</h2>
             <h3 class="h3 mt-2">that provides ...</h3>
         </div>
         
@@ -58,7 +58,7 @@ const services = [
                 :key="index"
             >
                 <Icon 
-                    name="heroicons:clipboard-document-check-solid" 
+                    name="heroicons:clipboard-document-check-solid"
                     size="3.5rem"
                     class="mb-4 group-hover:text-accent  basicanimation"
                 />

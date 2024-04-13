@@ -120,11 +120,11 @@ const handleClick = () => {
           <div
             class="mb-12 pt-40 space-y-16 md:mb-20 md:pt-56 lg:w-8/12 lg:mx-auto"
           >
-            <h6 class="font-medium uppercase tracking-widest text-center text-white">Engineering Technology</h6>
+            <h6 class="font-medium uppercase tracking-widest text-center text-white">USA | INDIA | CANADA</h6>
             <h1
               class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl"
             >
-              Don't look again for your next freelance projects, you got them.
+            GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span class="h1 underline underline-offset-3 decoration-8 decoration-fuchsia-400 basicanimation"> 360 DEGREE </span> EXPERTISE
             </h1>
 
             <form action="" class="w-full">
@@ -191,7 +191,7 @@ const handleClick = () => {
                   </div>
                 </div> -->
                 <input
-                  placeholder="Your favorite position"
+                  placeholder="Get Started with Struct360"
                   class="w-full p-4 outline-none text-gray-600"
                   type="text"
                 />
@@ -248,11 +248,11 @@ const handleClick = () => {
 
 <style scoped lang="postcss">
 #hero {
-  background-image: url("/constructionbg.webp");
+  background-image: url("/img/bgs/bgimg2.jpg");
   background-position: center center    ;
   @apply bg-cover;
   #wrapper {
-    @apply backdrop-blur-lg bg-accent/20;
+    @apply backdrop-blur-lg bg-accent/25;
   }
 }
 </style>

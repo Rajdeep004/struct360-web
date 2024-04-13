@@ -8,5 +8,6 @@
     <About />
     <Services />
     <Affilation />
+    <Footer />
   </div>
 </template>
