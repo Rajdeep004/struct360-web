@@ -47,7 +47,7 @@ const services = [
     <UContainer id="services" as="section" >
         <div class="mb-12">
             <h5 class="h5">Our Services</h5>
-            <h2 class="h2 mt-6 uppercase">We are a <span class="h2 underline underline-offset-auto decoration-8 decoration-accent/50"> Customer Service</span> Organisation</h2>
+            <h2 class="h1 mt-6">We are a <span class="h1 underlineTxt relative inline-block after:!bg-accent/50"> Customer Service</span> Organisation</h2>
             <h3 class="h3 mt-2">that provides ...</h3>
         </div>
         

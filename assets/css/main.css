@@ -51,3 +51,8 @@ body {
 .h6 {
   @apply text-lg font-bold dark:text-white;
 }
+
+.underlineTxt::after {
+  content: "";
+  @apply h-4 bg-fuchsia-400/75 absolute block left-0 bottom-0 w-full -z-10;
+}

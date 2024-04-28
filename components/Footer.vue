@@ -55,7 +55,7 @@ const navigation = [
       </ul>
     </div>
   </div>
-  <h5 class="text-center text-lg font-bold mb-4">
+  <h5 class="text-center h6">
     Developed by The Coding Devotees
   </h5>
 </footer>

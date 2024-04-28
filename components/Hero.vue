@@ -12,10 +12,26 @@ const handleClick = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value;
   navbarRef.value.style.height = mobileMenuOpen.value ? ` ${navbarRef.value.scrollHeight + 60}px` : `0px`;
 };
+
+const bg = ref("/img/bgs/bgimg4.jpg");
+onMounted(() => {
+  const images = [
+    "/img/bgs/bgimg5.jpg",
+    "/img/bgs/bgimg1.jpg",
+    "/img/bgs/bgimg2.jpg",
+    "/img/bgs/bgimg3.jpg",
+  ];
+  let i = 0;
+  setInterval(() => {
+    bg.value = `background-image: url(${images[i]})`;
+    i = i === images.length - 1 ? 0 : i + 1;
+  }, 10000);
+});
 </script>
 
 <template>
-  <section id="hero">
+  
+  <section id="hero" :style="bg" class="basicanimation">
     <div id="wrapper" class="lg:h-screen">
       <header>
         <nav id="header" class="z-50 w-full transition-all ease-in">
@@ -119,11 +135,11 @@ const handleClick = () => {
           <div
             class="mb-12 pt-40 space-y-16 md:mb-20 md:pt-56 lg:w-8/12 lg:mx-auto"
           >
-            <h6 class="font-medium uppercase tracking-widest text-center text-white">USA | INDIA | CANADA</h6>
+            <!-- <h6 class="font-medium uppercase tracking-widest text-center text-white">USA | INDIA | CANADA</h6> -->
             <h1
               class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl"
             >
-            GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span class="text-3xl font-bold sm:text-4xl md:text-5xl underline underline-offset-[2px] decoration-8 decoration-fuchsia-400/75"> 360 DEGREE</span> EXPERTISE
+            GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span class="text-3xl font-bold sm:text-4xl md:text-5xl underlineTxt relative inline-block"> 360 DEGREE</span> EXPERTISE
             </h1>
 
             <!-- <form action="" class="w-full">
@@ -247,8 +263,8 @@ const handleClick = () => {
 
 <style scoped lang="postcss">
 #hero {
-  background-image: url("/img/bgs/bgimg5.jpg");
-  background-position: center center    ;
+  /* background-image: url("/img/bgs/bgimg5.jpg"); */
+  background-position: center center;
   @apply bg-cover;
   #wrapper {
     @apply backdrop-blur-sm bg-black/25;
@@ -279,6 +295,5 @@ const handleClick = () => {
   @apply bg-fuchsia-400/75;
   transition: width .5s ease 0s, right .5s ease 0s;
   width: 0;
-}
-    
+} 
 </style>
