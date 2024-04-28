@@ -10,7 +10,6 @@ const navbarRef = ref(null);
 const mobileMenuOpen = ref(false);
 const handleClick = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value;
-  console.log("Clickeddddddd", mobileMenuOpen.value);
   navbarRef.value.style.height = mobileMenuOpen.value ? ` ${navbarRef.value.scrollHeight + 60}px` : `0px`;
 };
 </script>
@@ -24,9 +23,9 @@ const handleClick = () => {
             <div
               class="flex flex-wrap items-center justify-between py-6 md:py-4 md:gap-0"
             >
-              <div class="w-full flex items-start justify-between lg:w-auto">
-                <a href="#" aria-label="logo">
-                  <img src="/Logo.svg" class="w-12 drop-shadow-2xl" alt="Struct360 logo" />
+              <div class="w-full flex items-center justify-between lg:w-auto">
+                <a href="#" aria-label="logo" draggable="false">
+                  <img src="/struct360 logo.svg" class="w-32 drop-shadow-2xl" alt="Struct360 logo" draggable="false"/>
                 </a>
 
                 <div class="block max-w-max">
@@ -56,7 +55,7 @@ const handleClick = () => {
               <div
                 id="navbar"
                 ref="navbarRef"
-                class="flex h-0 lg:h-auto overflow-hidden lg:flex lg:pt-0 w-full md:space-y-0 lh:p-0 md:bg-transparent lg:w-auto transition-all duration-300"
+                class="flex h-0 lg:h-auto overflow-hidden lg:flex lg:pt-0 w-full md:space-y-0 lh:p-0 md:bg-white/5 lg:w-auto rounded-lg transition-all duration-300"
                 :class="mobileMenuOpen ? 'py-5' : 'h-0'"
               >
                 <div
@@ -69,16 +68,16 @@ const handleClick = () => {
                     <li v-for="nav in navigation">
                       <NuxtLink
                         :to="nav.href"
-                        class="block md:px-3 hover:underline underline-offset-4 decoration-4 decoration-accent/80 basicanimation"
+                        class="block md:px-3 Link basicanimation"
                         >{{ nav.name }}
                       </NuxtLink>
                     </li>
                   </ul>
 
                   <ul
-                    class="border-t w-full lg:w-max gap-3 pt-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border-l flex flex-col lg:gap-0 lg:items-center lg:flex-row"
+                    class="border-t w-full lg:w-max gap-3 pt-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border- flex flex-col lg:gap-0 lg:items-center lg:flex-row"
                   >
-                    <li class="flex w-full lg:max-w-max justify-center">
+                    <!-- <li class="flex w-full lg:max-w-max justify-center">
                       <button
                         type="button"
                         title="Start buying"
@@ -90,7 +89,7 @@ const handleClick = () => {
                           Login
                         </span>
                       </button>
-                    </li>
+                    </li> -->
 
                     <li class="flex w-full lg:max-w-max justify-center">
                       <button
@@ -101,7 +100,7 @@ const handleClick = () => {
                         <span
                           class="block text-sm text-white lg:text-accent font-semibold"
                         >
-                          Sign In
+                          Contact
                         </span>
                       </button>
                     </li>
@@ -124,14 +123,14 @@ const handleClick = () => {
             <h1
               class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl"
             >
-            GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span class="h1 underline underline-offset-3 decoration-8 decoration-fuchsia-400 basicanimation"> 360 DEGREE </span> EXPERTISE
+            GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span class="text-3xl font-bold sm:text-4xl md:text-5xl underline underline-offset-[2px] decoration-8 decoration-fuchsia-400/75"> 360 DEGREE</span> EXPERTISE
             </h1>
 
-            <form action="" class="w-full">
+            <!-- <form action="" class="w-full">
               <div
                 class="relative flex p-1 rounded-xl bg-white shadow-2xl md:p-2"
               >
-                <!-- <div
+                <div
                   id="catJobBox"
                   class="hidden text-gray-600 relative md:flex justify-between items-center min-w-max select-none"
                 >
@@ -189,7 +188,7 @@ const handleClick = () => {
                       </li>
                     </ul>
                   </div>
-                </div> -->
+                </div>
                 <input
                   placeholder="Get Started with Struct360"
                   class="w-full p-4 outline-none text-gray-600"
@@ -215,7 +214,7 @@ const handleClick = () => {
                   </svg>
                 </button>
               </div>
-            </form>
+            </form> -->
           </div>
 
           <div class="pb-16">
@@ -248,11 +247,38 @@ const handleClick = () => {
 
 <style scoped lang="postcss">
 #hero {
-  background-image: url("/img/bgs/bgimg2.jpg");
+  background-image: url("/img/bgs/bgimg5.jpg");
   background-position: center center    ;
   @apply bg-cover;
   #wrapper {
-    @apply backdrop-blur-lg bg-accent/25;
+    @apply backdrop-blur-sm bg-black/25;
   }
 }
+
+.Link {
+  text-decoration: none;
+  display: inline-block;
+  @apply p-0 md:p-4;
+  /* padding: 15px; */
+  position: relative;
+}
+
+.Link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.Link::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 0;
+  position: absolute;
+  @apply bg-fuchsia-400/75;
+  transition: width .5s ease 0s, right .5s ease 0s;
+  width: 0;
+}
+    
 </style>
