@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/ui",
     "nuxt-icon-tw",
-    "nuxt-headlessui"
+    "nuxt-headlessui",
+    "nuxt-swiper"
   ],
   colorMode: {
     preference: 'light'

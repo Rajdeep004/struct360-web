@@ -14,6 +14,7 @@
     "nuxt": "^3.11.1",
     "nuxt-headlessui": "^1.1.5",
     "nuxt-icon-tw": "^0.1.3",
+    "nuxt-swiper": "^1.2.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   }
