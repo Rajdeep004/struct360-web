@@ -13,86 +13,65 @@ const handleClick = () => {
   navbarRef.value.style.height = mobileMenuOpen.value ? ` ${navbarRef.value.scrollHeight + 60}px` : `0px`;
 };
 
-const bg = ref("/img/bgs/bgimg4.jpg");
+const bg = ref();
+const images = [
+  "img/bgs/bg1.jpeg",
+  "img/bgs/bg2.jpeg",
+  "img/bgs/bg3.jpeg",
+  "img/bgs/bg4.jpeg",
+  "img/bgs/bg5.png",
+  "img/bgs/bg6.jpg",
+];
 onMounted(() => {
-  const images = [
-    "/img/bgs/bgimg5.jpg",
-    "/img/bgs/bgimg1.jpg",
-    "/img/bgs/bgimg2.jpg",
-    "/img/bgs/bgimg3.jpg",
-  ];
   let i = 0;
   setInterval(() => {
     bg.value = `background-image: url(${images[i]})`;
     i = i === images.length - 1 ? 0 : i + 1;
-  }, 10000);
+    console.log(bg.value);
+  }, 5000);
 });
 </script>
 
 <template>
-  
-  <section id="hero" :style="bg" class="basicanimation">
+  <section id="hero" :style="bg" class="transition-all ease-in">
     <div id="wrapper" class="lg:h-screen">
       <header>
         <nav id="header" class="z-50 w-full transition-all ease-in">
           <div class="container m-auto px-6 md:px-12 lg:px-6">
-            <div
-              class="flex flex-wrap items-center justify-between py-6 md:py-4 md:gap-0"
-            >
+            <div class="flex flex-wrap items-center justify-between py-6 md:py-4 md:gap-0">
               <div class="w-full flex items-center justify-between lg:w-auto">
                 <a href="#" aria-label="logo" draggable="false">
-                  <img src="/struct360 logo.svg" class="w-32 drop-shadow-2xl" alt="Struct360 logo" draggable="false"/>
+                  <img src="/struct360 logo.svg" class="w-32 drop-shadow-2xl" alt="Struct360 logo" draggable="false" />
                 </a>
 
                 <div class="block max-w-max">
-                  <button
-                    aria-label="humburger"
-                    id="hamburger"
-                    class="block relative h-auto lg:hidden basicanimation"
-                    :class="mobileMenuOpen ? 'py-5' : 'py-0'"
-                    @click="handleClick"
-                  >
-                    <div
-                      aria-hidden="true"
-                      id="line"
+                  <button aria-label="humburger" id="hamburger" class="block relative h-auto lg:hidden basicanimation"
+                    :class="mobileMenuOpen ? 'py-5' : 'py-0'" @click="handleClick">
+                    <div aria-hidden="true" id="line"
                       class="m-auto h-0.5 w-6 rounded bg-gray-100 transition duration-300"
-                      :class="mobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''"
-                    ></div>
-                    <div
-                      aria-hidden="true"
-                      id="line2"
+                      :class="mobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''"></div>
+                    <div aria-hidden="true" id="line2"
                       class="m-auto mt-2 h-0.5 w-6 rounded bg-gray-100 transition duration-300"
-                      :class="mobileMenuOpen ? '-rotate-45 -translate-y-1' : ''"
-                    ></div>
+                      :class="mobileMenuOpen ? '-rotate-45 -translate-y-1' : ''"></div>
                   </button>
                 </div>
               </div>
 
-              <div
-                id="navbar"
-                ref="navbarRef"
+              <div id="navbar" ref="navbarRef"
                 class="flex h-0 lg:h-auto overflow-hidden lg:flex lg:pt-0 w-full md:space-y-0 lh:p-0 md:bg-white/5 lg:w-auto rounded-lg transition-all duration-300"
-                :class="mobileMenuOpen ? 'py-5' : 'h-0'"
-              >
-                <div
-                  id="navBox"
-                  class="w-full p-6 lg:p-0 bg-white bg-opacity-40 backdrop-blur-md lg:items-center flex flex-col lg:flex-row lg:bg-transparent transition-all ease-in"
-                >
+                :class="mobileMenuOpen ? 'py-5' : 'h-0'">
+                <div id="navBox"
+                  class="w-full p-6 lg:p-0 bg-white bg-opacity-40 backdrop-blur-md lg:items-center flex flex-col lg:flex-row lg:bg-transparent transition-all ease-in">
                   <ul
-                    class="space-y-6 pb-6 tracking-wide font-medium text-gray-800 lg:text-gray-100 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0"
-                  >
+                    class="space-y-6 pb-6 tracking-wide font-medium text-gray-800 lg:text-gray-100 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
                     <li v-for="nav in navigation">
-                      <NuxtLink
-                        :to="nav.href"
-                        class="block md:px-3 Link basicanimation"
-                        >{{ nav.name }}
+                      <NuxtLink :to="nav.href" class="block md:px-3 Link basicanimation">{{ nav.name }}
                       </NuxtLink>
                     </li>
                   </ul>
 
                   <ul
-                    class="border-t w-full lg:w-max gap-3 pt-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border- flex flex-col lg:gap-0 lg:items-center lg:flex-row"
-                  >
+                    class="border-t w-full lg:w-max gap-3 pt-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border- flex flex-col lg:gap-0 lg:items-center lg:flex-row">
                     <!-- <li class="flex w-full lg:max-w-max justify-center">
                       <button
                         type="button"
@@ -108,14 +87,9 @@ onMounted(() => {
                     </li> -->
 
                     <li class="flex w-full lg:max-w-max justify-center">
-                      <button
-                        type="button"
-                        title="Start buying"
-                        class="flex w-full py-3 px-6 rounded-lg text-center transition bg-accent lg:bg-white active:bg-fuchsia-700 lg:active:bg-purple-200 focus:bg-fuchsia-500 lg:focus:bg-purple-100 justify-center max-w-lg lg:max-w-max"
-                      >
-                        <span
-                          class="block text-sm text-white lg:text-accent font-semibold"
-                        >
+                      <button type="button" title="Start buying"
+                        class="flex w-full py-3 px-6 rounded-lg text-center transition bg-accent lg:bg-white active:bg-fuchsia-700 lg:active:bg-purple-200 focus:bg-fuchsia-500 lg:focus:bg-purple-100 justify-center max-w-lg lg:max-w-max">
+                        <span class="block text-sm text-white lg:text-accent font-semibold">
                           Contact
                         </span>
                       </button>
@@ -132,14 +106,12 @@ onMounted(() => {
         <!-- <img class="absolute inset-0 w-full h-full object-cover object-top" src="/background2.jpg" width="400" height="500" alt="hero background image"> -->
         <div aria-hidden="true" />
         <div class="relative container m-auto px-6 md:px-12 lg:px-6">
-          <div
-            class="mb-12 pt-40 space-y-16 md:mb-20 md:pt-56 lg:w-8/12 lg:mx-auto"
-          >
+          <div class="mb-12 pt-40 space-y-16 md:mb-20 md:pt-56 lg:w-8/12 lg:mx-auto">
             <!-- <h6 class="font-medium uppercase tracking-widest text-center text-white">USA | INDIA | CANADA</h6> -->
-            <h1
-              class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl"
-            >
-            GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span class="text-3xl font-bold sm:text-4xl md:text-5xl underlineTxt relative inline-block"> 360 DEGREE</span> EXPERTISE
+            <h1 class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl">
+              GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span
+                class="text-3xl font-bold sm:text-4xl md:text-5xl underlineTxt relative inline-block"> 360 DEGREE</span>
+              EXPERTISE
             </h1>
 
             <!-- <form action="" class="w-full">
@@ -263,9 +235,10 @@ onMounted(() => {
 
 <style scoped lang="postcss">
 #hero {
-  /* background-image: url("/img/bgs/bgimg5.jpg"); */
+  background-image: url("img/bgs/bg6.jpg");
   background-position: center center;
   @apply bg-cover;
+
   #wrapper {
     @apply backdrop-blur-sm bg-black/25;
   }
@@ -295,5 +268,5 @@ onMounted(() => {
   @apply bg-fuchsia-400/75;
   transition: width .5s ease 0s, right .5s ease 0s;
   width: 0;
-} 
+}
 </style>
