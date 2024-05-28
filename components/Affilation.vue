@@ -91,15 +91,57 @@ const Softwares = [
     },
     
 ];
+
+const markets = ref([
+    "Motel/Leisure",
+    "Restaurant",
+    "Retail",
+    "C store",
+    "k-12",
+    "Health care",
+    "Entertainment",
+    "Cultural",
+    "Commercial",
+    "Residential",
+    "Higher Education",
+    "civic/recreations",
+    "Hospitality",
+    "Distribution center",
+    "Retail",
+    "Grocery Food market",
+    "Commercial Food Kitchen",
+    "Stadium And Sport Venue Rendering and Experience",
+    "Government",
+    "Financial"
+]);
+let i = ref(0);
+onMounted(()=>{
+    setInterval(() => {
+        i.value = markets.value.length === i.value-1 ? 0 : i.value+1;
+    }, 3000);
+})
 </script>
 
 <template>
     <UContainer id="affilation" as="section" class="py-24 flex flex-col justify-center items-center space-y-12">
         <div class="space-y-6 text-center">
             <h6 class="font-medium uppercase tracking-widest">
-                Engineering Technology
+                MARKETS SERVING
             </h6>
             <h1 class="h1">
+				CENTERING WITH INNOVATIVE DESIGN
+			</h1>
+        </div>
+        <div class="flex items-center justify-center flex-wrap gap-16">
+            <h3 class="h3">
+                {{ markets[i] }}
+            </h3>
+        </div>
+        <div class="space-y-6 text-center">
+            <h6 class="font-medium uppercase tracking-widest">
+                Engineering Technology
+            </h6>
+            <h1 class="h1 uppercase">
 				Utilizing Industry Leading Software
 			</h1>
         </div>
@@ -117,9 +159,9 @@ const Softwares = [
 
         <div class="space-y-6 text-center">
             <h6 class="font-medium uppercase tracking-widest">
-               Memberships
+                MEMBERSHIPS & AFFILIATIONS
             </h6>
-            <h1 class="h1">Our affiliations</h1>
+            <h1 class="h1">COLLOBORATING WITH DIFFERENT ORGANIZATIONS</h1>
         </div>
 
         <div class="flex justify-center items-center gap-16 flex-wrap">

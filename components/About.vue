@@ -7,15 +7,17 @@
                 <span class="h1 underlineTxt relative inline-block after:!bg-accent/50">Construction Project</span>
             </h1>
             <p class="">
-                Any delay in your construction project due to a structural design error can impact your timelines and budget. Grubb Engineering provides services that build value in each step from the beginning. Our services range from conceptual design to full BIM component shop drawings, so there isn’t a need to coordinate with multiple companies. We can also help cut down timelines and errors with our high-quality 3D modelling of your entire building. So, if something does not align during the construction process, we can zoom right into the area that your contractors are presently working on to identify and solve issues - in real time. Our team of knowledgeable structural engineers is here to ensure your construction project is safe, completed on time and has value added.
+                Any delay in construction project due to improper coordination between design consultants??
+                    <br> <br>
+                STRUCT360 provides one-stop services for your whole construction projects under one-roof. Our services range from your initial imagination, bid planning to BIM modeling to construction drawings and final coordination with contractors for any construction issues. Our highly skilled engineers and modelers help and distribute your project workload with efficient engineering methods.
             </p>
             <div class="pl-16 lg:pl-12 border border-accent">
                 <ul class="flex flex-col lg:flex-row lg:gap-8 list-disc">
-                    <li class="lg:list-none">VALUE ENGINEERING</li>
-                    <li>3d Modelling</li>
-                    <li>Live Communication</li>
-                    <li>Building Trust</li>
-                    <li>Collaboration</li>
+                    <li class="lg:list-none">Live coordination</li>
+                    <li>Detailed 3D modeling</li>
+                    <li>Collaboration with Different Stakeholders</li>
+                    <li>Full Project Support from Bid to Final phase</li>
+                    <li>24X7  workflow</li>
                 </ul>
             </div>
         </div>

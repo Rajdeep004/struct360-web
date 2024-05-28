@@ -9,56 +9,80 @@ const navigation = [
 
 <template>
 
-<footer
-  class="sm:w-full bg-accent text-white"
->
-  <div class="flex flex-col lg:flex-row w-full p-8 gap-6">
-    <div class="w-full">
-      <div class="w-max">
-        <NuxtLink to="/" >
-          <img 
-            src="/Logo Secondary.png" 
-            alt="Struct 360 Secondary Logo"
-            class="w-24"
+<footer class="w-full bg-gray-100 dark:bg-gray-900 py-16">
+  <div class="md:px-12 lg:px-28">
+    <div class="container m-auto space-y-6 text-gray-600 dark:text-gray-300">
+      <img src="/struct360 logo sec.svg" alt="logo strc" class="m-auto w-40" />
+      <ul
+        role="list"
+        class="flex flex-col items-center justify-center gap-4 py-4 sm:flex-row sm:gap-8"
+      >
+        <li role="listitem"><a href="#" class="hover:text-primary">Home</a></li>
+        <li role="listitem"><a href="#" class="hover:text-primary">Features</a></li>
+        <li role="listitem"><a href="#" class="hover:text-primary">Get started</a></li>
+        <li role="listitem"><a href="#" class="hover:text-primary">About us</a></li>
+      </ul>
+      <div class="m-auto flex w-max items-center justify-between space-x-4">
+        <a href="tel:+243996660436" aria-label="call">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="m-auto w-5"
+            viewBox="0 0 16 16"
           >
-        </NuxtLink> 
+            <path
+              fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+            ></path>
+          </svg>
+        </a>
+        <a href="mailto:hello@mail.com" aria-label="send mail">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="m-auto w-5"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+            ></path>
+          </svg>
+        </a>
+        <a href="#" title="facebook" target="blank" aria-label="facebook">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="m-auto w-5"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+            ></path>
+          </svg>
+        </a>
+        <a href="#" title="linkedin" target="blank" aria-label="linkedin">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="m-auto w-5"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+            ></path>
+          </svg>
+        </a>
       </div>
-      <h3 class="text-xl font-semibold mt-4">Struct 360 </h3>
-    </div>
-    <div class="w-full">
-      <h4 class="text-xl font-semibold">Pages</h4>
-      <ul class="flex flex-col">
-        <NuxtLink 
-            v-for="nav,index in navigation"
-            :key="index"
-            :to="nav.href" 
-        >{{ nav.name }}</NuxtLink>
-      </ul>
-    </div>
-    <div class="w-full">
-      <div class="w-full">
-        <h4 class="text-xl font-semibold">Connect</h4>
-        <ul class="flex flex-col">
-          <a target="_blank" ><svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M19 11.95q0-2.925-2.037-4.962T12 4.95v-2q1.875 0 3.513.713t2.85 1.925q1.212 1.212 1.925 2.85T21 11.95zm-4 0q0-1.25-.875-2.125T12 8.95v-2q2.075 0 3.538 1.463T17 11.95zM19.95 21q-3.125 0-6.175-1.362t-5.55-3.863q-2.5-2.5-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"/></svg> <span>+44 7878787878</span></a>
-          <a target="_blank" ><svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037"/></svg> <span>struct360@gmail.com</span></a>
-          <a target="_blank" ><svg class="inline-flex" xmlns="http://www.w3.org/2000/svg" width="24" height="32" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5"/></svg> <span>USA | Canada</span></a>
-        </ul>
+
+      <div class="text-center">
+        <span class="text-sm tracking-wide"
+          >Copyright © struct360 <span id="year"></span> | Developed by The Coding Devotees</span
+        >
       </div>
-    </div>
-    <div class="w-full">
-      <a href="https://www.linkedin.com/company/a-r-business-consultant-limited" target="_blank"><h4 class="text-xl font-semibold">Social Media</h4></a>
-      <ul class="flex flex-col">
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter | X</li>
-        <li>Linkedin</li>
-      </ul>
     </div>
   </div>
-  <h5 class="text-center h6">
-    Developed by The Coding Devotees
-  </h5>
 </footer>
+                                    
 </template>
 
 <style scoped lang="postcss"></style>

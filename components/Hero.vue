@@ -13,26 +13,52 @@ const handleClick = () => {
   navbarRef.value.style.height = mobileMenuOpen.value ? ` ${navbarRef.value.scrollHeight + 60}px` : `0px`;
 };
 
-const bg = ref();
-const images = [
-  "img/bgs/bg1.jpeg",
-  "img/bgs/bg2.jpeg",
-  "img/bgs/bg3.jpeg",
-  "img/bgs/bg4.jpeg",
-  "img/bgs/bg5.png",
-  "img/bgs/bg6.jpg",
+const uspidx = ref(0);
+const usps = [
+  "VALUE ENGINEERING",
+  "ARCHITECTURAL",
+  "STRUCTURAL",
+  "MEP",
+  "BIM MODELING",
+  "CONSTRUCTION SUPPORT",
+  "AV DESIGN",
+  "PERMIT PLANNING",
+  "360 DEGREE"
 ];
+
+// const bg = ref();
+// const images = [
+//   "img/bgs/bg1.jpeg",
+//   "img/bgs/bg2.jpeg",
+//   "img/bgs/bg3.jpeg",
+//   "img/bgs/bg4.jpeg",
+//   "img/bgs/bg5.png",
+//   "img/bgs/bg6.jpg",
+// ];
 onMounted(() => {
-  let i = 0;
-  setInterval(() => {
-    bg.value = `background-image: url(${images[i]})`;
-    i = i === images.length - 1 ? 0 : i + 1;
-    console.log(bg.value);
-  }, 5000);
+  // Change background image every 5 seconds
+  // let i = 0;
+  // setInterval(() => {
+  //   bg.value = `background-image: url(${images[i]})`;
+  //   i = i === images.length - 1 ? 0 : i + 1;
+  //   // console.log(bg.value);
+  // }, 5000);
+
+  // Change USP every 3 seconds
+  const uspInterval = setInterval(() => {
+    uspidx.value = uspidx.value === usps.length - 1 ? 0 : uspidx.value + 1;
+  }, 4000);
 });
 </script>
 
 <template>
+  <!-- Get request to load all bg images at web page time -->
+  <img src="/img/bgs/bg1.jpeg" hidden />
+  <img src="/img/bgs/bg2.jpeg" hidden />
+  <img src="/img/bgs/bg3.jpeg" hidden />
+  <img src="/img/bgs/bg4.jpeg" hidden />
+  <img src="/img/bgs/bg5.png" hidden />
+  <img src="/img/bgs/bg6.jpg" hidden />
   <section id="hero" :style="bg" class="transition-all ease-in">
     <div id="wrapper" class="lg:h-screen">
       <header>
@@ -109,8 +135,10 @@ onMounted(() => {
           <div class="mb-12 pt-40 space-y-16 md:mb-20 md:pt-56 lg:w-8/12 lg:mx-auto">
             <!-- <h6 class="font-medium uppercase tracking-widest text-center text-white">USA | INDIA | CANADA</h6> -->
             <h1 class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl">
-              GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <span
-                class="text-3xl font-bold sm:text-4xl md:text-5xl underlineTxt relative inline-block"> 360 DEGREE</span>
+              GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR 
+              <span
+                class="text-3xl font-bold sm:text-4xl md:text-5xl underlineTxt relative inline-block transition-all ease-in-out duration-500" v-text="usps[uspidx]" 
+              /> <br>
               EXPERTISE
             </h1>
 
@@ -235,8 +263,9 @@ onMounted(() => {
 
 <style scoped lang="postcss">
 #hero {
-  background-image: url("img/bgs/bg6.jpg");
+  background-image: url("/assets/img/bg.png");
   background-position: center center;
+  transition: all 2s ease-in-out; 
   @apply bg-cover;
 
   #wrapper {
