@@ -13,7 +13,7 @@
             </p>
             <div class="pl-16 lg:pl-12 border border-accent">
                 <ul class="flex flex-col lg:flex-row lg:gap-8 list-disc">
-                    <li class="lg:list-none">Live coordination</li>
+                    <li class="lg:list-none">Expert Coordination</li>
                     <li>Detailed 3D modeling</li>
                     <li>Collaboration with Different Stakeholders</li>
                     <li>Full Project Support from Bid to Final phase</li>

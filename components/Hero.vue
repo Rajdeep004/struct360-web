@@ -327,7 +327,7 @@
 
 <style scoped lang="postcss">
     #hero {
-        background-image: url("/assets/img/bg.png");
+        background-image: url("/assets/img/bg.jpg");
         background-position: center center;
         transition: all 2s ease-in-out;
         @apply bg-cover;
