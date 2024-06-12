@@ -168,7 +168,8 @@
                                         >
                                             <button
                                                 type="button"
-                                                title="Start buying"
+                                                @click="$emit('form',true)"
+                                                title="Inquiry Now"
                                                 class="flex w-full py-3 px-6 rounded-lg text-center transition bg-accent lg:bg-white active:bg-fuchsia-700 lg:active:bg-purple-200 focus:bg-fuchsia-500 lg:focus:bg-purple-100 justify-center max-w-lg lg:max-w-max"
                                             >
                                                 <span

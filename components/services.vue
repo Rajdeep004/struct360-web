@@ -135,7 +135,7 @@
 </script>
 
 <template>
-    <UContainer id="services" as="section">
+    <div id="services" as="section" class="m-4">
         <div class="mb-12">
             <h5 class="h5">Our Services</h5>
             <h2 class="h1 mt-6">
@@ -180,7 +180,7 @@
                 </div>
             </UCard>
         </div>
-    </UContainer>
+    </div>
 </template>
 
 <style scoped>

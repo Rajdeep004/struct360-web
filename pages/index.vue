@@ -1,17 +1,20 @@
 <script setup>
-    const val = ref(false);
+    const isFormOpen = ref(false);
+    watch(isFormOpen, ()=>{
+        console.log("value of isFormOpen is", isFormOpen.value);
+    })
 </script>
 
 <template>
     <div class="space-y-12">
-        <Hero />
+        <Hero @form="isFormOpen = !isFormOpen"/>
         <button
             class="px-4 py-2 bg-accent text-white rounded-lg fixed z-50 end-0 -rotate-90 hidden md:inline-flex -mx-6 bottom-48"
-            @click="val = !val"
+            @click="isFormOpen = true"
         >
             Inquiry
         </button>
-        <Inquiry v-if="val" />
+        <Inquiry :isOpen="isFormOpen" @toggle="(x) => isFormOpen = x"/>
         <About />
         <!-- <Projects /> -->
         <Services />

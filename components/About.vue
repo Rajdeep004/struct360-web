@@ -1,5 +1,5 @@
 <template>
-    <UContainer id="about" as="section">
+    <div id="about" as="section" class="m-4">
         <div class="space-y-3">
             <h5 class="h5">About us</h5>
             <h1 class="h1 py-3">
@@ -21,7 +21,7 @@
                 </ul>
             </div>
         </div>
-    </UContainer>
+    </div>
 </template>
 
 <style lang="postcss">

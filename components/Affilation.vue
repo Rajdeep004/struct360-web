@@ -134,10 +134,9 @@ onMounted(() => {
 </script>
 
 <template>
-	<UContainer
+	<section
 		id="affilation"
-		as="section"
-		class="flex snap-y snap-mandatory flex-col items-center justify-center gap-16 py-24"
+		class="flex snap-y snap-mandatory flex-col items-center justify-center gap-16 py-24 mx-4 lg:mx-2"
 	>
 		<div class="snap-center space-y-8">
 			<div class="space-y-6 text-center">
@@ -209,7 +208,7 @@ onMounted(() => {
 				/>
 			</div>
 		</div>
-	</UContainer>
+	</section>
 </template>
 
 <style scoped lang="postcss"></style>

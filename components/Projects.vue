@@ -2,7 +2,7 @@
 
 <template>
   <div class="bg-zinc-100">
-    <UContainer as="section" id="projects" class="container mx-auto py-12 px-4">
+    <div as="section" id="projects" class="container mx-auto py-12 px-4">
       <Swiper
         :modules="[SwiperAutoplay, SwiperNavigation, SwiperPagination]"
         :slides-per-view="1"
@@ -28,7 +28,7 @@
         </SwiperSlide>
         <div class="flex"><div id="swiper-pagination"/></div>
       </Swiper>
-    </UContainer>
+    </div>
   </div>
 </template>
 
