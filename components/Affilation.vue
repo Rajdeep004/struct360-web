@@ -36,7 +36,7 @@ const Affilations = [
 		path: affilation_base + "AISI.png",
 		alt: "AISI Logo",
 	},
-	
+
 	{
 		id: "7",
 		path: affilation_base + "AWC.png",
@@ -134,19 +134,13 @@ onMounted(() => {
 </script>
 
 <template>
-	<section
-		id="affilation"
-		class="flex snap-y snap-mandatory flex-col items-center justify-center gap-16 py-24 mx-4 lg:mx-2"
-	>
-		<div class="snap-center space-y-8">
+	<section class="flex snap-y snap-mandatory flex-col items-center justify-center gap-16 py-24 mx-4 lg:mx-2">
+		<div id="markets" class="snap-center space-y-8">
 			<div class="space-y-6 text-center">
 				<h6 class="font-medium uppercase tracking-widest">MARKETS SERVING</h6>
 				<h1 class="h1">
 					CENTERING WITH
-					<span
-						class="h1 underlineTxt relative inline-block after:!bg-accent/50"
-						>INNOVATIVE</span
-					>
+					<span class="h1 underlineTxt relative inline-block after:!bg-accent/50">INNOVATIVE</span>
 					DESIGN
 				</h1>
 			</div>
@@ -164,48 +158,30 @@ onMounted(() => {
 				</h6>
 				<h1 class="h1 uppercase">
 					Utilizing Industry
-					<span
-						class="h1 underlineTxt relative inline-block after:!bg-accent/50"
-						>Leading</span
-					>
+					<span class="h1 underlineTxt relative inline-block after:!bg-accent/50">Leading</span>
 					Software
 				</h1>
 			</div>
 			<div class="flex flex-wrap items-center justify-center gap-16">
-				<img
-					v-for="img in Softwares"
-					:key="img.id"
-					:src="img.path"
-					:alt="img.alt"
-					class="basicanimation object-contain grayscale hover:grayscale-0"
-					:class="img.size"
-				/>
+				<img v-for="img in Softwares" :key="img.id" :src="img.path" :alt="img.alt"
+					class="basicanimation object-contain grayscale hover:grayscale-0" :class="img.size" />
 			</div>
 		</div>
 
-		<div class="snap-center space-y-8">
+		<div id="affilation" class="snap-center space-y-8">
 			<div class="space-y-6 text-center">
 				<h6 class="font-medium uppercase tracking-widest">
 					MEMBERSHIPS & AFFILIATIONS
 				</h6>
 				<h1 class="h1">
 					COLLOBORATING WITH
-					<span
-						class="h1 underlineTxt relative inline-block after:!bg-accent/50"
-						>DIFFERENT</span
-					>
+					<span class="h1 underlineTxt relative inline-block after:!bg-accent/50">DIFFERENT</span>
 					ORGANIZATIONS
 				</h1>
 			</div>
 			<div class="flex flex-wrap items-center justify-center gap-16">
-				<img
-					v-for="img in Affilations"
-					:key="img.id"
-					:src="img.path"
-					:alt="img.alt"
-					class="basicanimation w-28 object-contain grayscale hover:grayscale-0"
-					:class="img.size"
-				/>
+				<img v-for="img in Affilations" :key="img.id" :src="img.path" :alt="img.alt"
+					class="basicanimation w-28 object-contain grayscale hover:grayscale-0" :class="img.size" />
 			</div>
 		</div>
 	</section>

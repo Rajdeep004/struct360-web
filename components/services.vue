@@ -1,4 +1,5 @@
 <script setup>
+import { faCircle, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 const isFlipped = ref(false);
 const services = ref(
     [
@@ -135,25 +136,22 @@ const services = ref(
 </script>
 
 <template>
-    <div id="services" as="section" class="m-4">
-        <div class="mb-12">
-            <h5 class="h5">Our Services</h5>
-            <h2 class="h1 mt-6">
+    <div id="services" as="section" class="m-4 flex flex-col items-center justify-center">
+        <div class="space-y-6 text-center mb-8">
+            <h6 class="font-medium uppercase tracking-widest">Our Services</h6>
+            <h1 class="h1">
                 We are a
-                <span class="h1 underlineTxt relative inline-block after:!bg-accent/50">
-                    Customer Service</span>
-                Organisation
-            </h2>
-            <h3 class="h3 mt-2">that provides ...</h3>
+                <span class="h1 underlineTxt relative inline-block after:!bg-accent/50">Customer service</span>
+                that provides
+            </h1>
         </div>
-
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
             <UCard v-for="(it, index) in services" :key="index" @mouseover="it.isFlipped = true"
                 @mouseleave="it.isFlipped = false"
                 class="flip-card group bg-zinc-100 rounded-none p-4 max-w-md hover:mb-4 hover:-mt-4 hover:ring-2 hover:ring-accent hover:z-20 basicanimation justify-items-center">
                 <div class="flip-card-inner transition-all ease-in-out">
-                    <Icon name="heroicons:clipboard-document-check-solid" size="3.5rem"
-                        class="mb-4 group-hover:text-accent basicanimation" />
+                    <font-awesome :icon="faScrewdriverWrench"
+                        class="mb-4 group-hover:text-accent basicanimation text-5xl" />
                     <h4 class="h4 mb-2">
                         {{ it.isFlipped ? "Our Services" : it.title }}
                     </h4>

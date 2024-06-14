@@ -1,8 +1,10 @@
 <script setup>
 const navigation = [
-	{ name: "Home", href: "/" },
+	// { name: "Home", href: "/" },
 	{ name: "About", href: "#about" },
 	{ name: "Services", href: "#services" },
+	{ name: "Achievements", href: "#achievements" },
+	{ name: "Markets", href: "#markets" },
 	{ name: "Affilation", href: "#affilation" },
 ];
 
@@ -310,4 +312,5 @@ onMounted(() => {
 	@apply bg-fuchsia-400/75;
 	transition: width 0.5s ease 0s, right 0.5s ease 0s;
 	width: 0;
-}</style>
+}
+</style>

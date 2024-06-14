@@ -33,6 +33,18 @@ importers:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
+      '@fortawesome/free-brands-svg-icons':
+        specifier: ^6.5.2
+        version: 6.5.2
+      '@fortawesome/free-regular-svg-icons':
+        specifier: ^6.5.2
+        version: 6.5.2
+      '@fortawesome/free-solid-svg-icons':
+        specifier: ^6.5.2
+        version: 6.5.2
+      '@vesp/nuxt-fontawesome':
+        specifier: ^1.0.4
+        version: 1.0.4(rollup@4.13.2)
       prettier:
         specifier: ^3.3.1
         version: 3.3.1
@@ -433,6 +445,26 @@ packages:
 
   '@floating-ui/utils@0.2.1':
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+
+  '@fortawesome/fontawesome-common-types@6.5.2':
+    resolution: {integrity: sha512-gBxPg3aVO6J0kpfHNILc+NMhXnqHumFxOmjYCFfOiLZfwhnnfhtsdA2hfJlDnj+8PjAs6kKQPenOTKj3Rf7zHw==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/fontawesome-svg-core@6.5.2':
+    resolution: {integrity: sha512-5CdaCBGl8Rh9ohNdxeeTMxIj8oc3KNBgIeLMvJosBMdslK/UnEB8rzyDRrbKdL1kDweqBPo4GT9wvnakHWucZw==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/free-brands-svg-icons@6.5.2':
+    resolution: {integrity: sha512-zi5FNYdmKLnEc0jc0uuHH17kz/hfYTg4Uei0wMGzcoCL/4d3WM3u1VMc0iGGa31HuhV5i7ZK8ZlTCQrHqRHSGQ==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/free-regular-svg-icons@6.5.2':
+    resolution: {integrity: sha512-iabw/f5f8Uy2nTRtJ13XZTS1O5+t+anvlamJ3zJGLEVE2pKsAWhPv2lq01uQlfgCX7VaveT3EVs515cCN9jRbw==}
+    engines: {node: '>=6'}
+
+  '@fortawesome/free-solid-svg-icons@6.5.2':
+    resolution: {integrity: sha512-QWFZYXFE7O1Gr1dTIp+D6UcFUF0qElOnZptpi7PBUMylJh+vFmIedVe1Ir6RM1t2tEQLLSV1k7bR4o92M+uqlw==}
+    engines: {node: '>=6'}
 
   '@headlessui/tailwindcss@0.2.0':
     resolution: {integrity: sha512-fpL830Fln1SykOCboExsWr3JIVeQKieLJ3XytLe/tt1A0XzqUthOftDmjcCYLW62w7mQI7wXcoPXr3tZ9QfGxw==}
@@ -1057,6 +1089,9 @@ packages:
     resolution: {integrity: sha512-j4jCOOXke2t8cHZCIxu1dzKLHLcFmYzC3yqAK6MfZznOL1QIJKd0xcFsXK3zcqzU7ScsE2zWkiMMNHGMHgp+FA==}
     engines: {node: '>=16'}
     hasBin: true
+
+  '@vesp/nuxt-fontawesome@1.0.4':
+    resolution: {integrity: sha512-jYPYagy7Ahgf+ex4RYqsPV5mIqol7qE2ba8aNb25ejq0XWD3um3wNkoyfnpxwZXF/pRMtXF9RFXvJAncUGw6aA==}
 
   '@vitejs/plugin-vue-jsx@3.1.0':
     resolution: {integrity: sha512-w9M6F3LSEU5kszVb9An2/MmXNxocAnUb3WhRr8bHlimhDrXNt6n6D2nJQR3UXpGlZHh/EsgouOHCsM8V3Ln+WA==}
@@ -4412,6 +4447,24 @@ snapshots:
 
   '@floating-ui/utils@0.2.1': {}
 
+  '@fortawesome/fontawesome-common-types@6.5.2': {}
+
+  '@fortawesome/fontawesome-svg-core@6.5.2':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.5.2
+
+  '@fortawesome/free-brands-svg-icons@6.5.2':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.5.2
+
+  '@fortawesome/free-regular-svg-icons@6.5.2':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.5.2
+
+  '@fortawesome/free-solid-svg-icons@6.5.2':
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.5.2
+
   '@headlessui/tailwindcss@0.2.0(tailwindcss@3.4.3)':
     dependencies:
       tailwindcss: 3.4.3
@@ -4602,7 +4655,7 @@ snapshots:
 
   '@nuxt/devtools-kit@1.1.5(nuxt@3.11.1(@parcel/watcher@2.4.1)(@types/node@20.12.2)(@unocss/reset@0.58.9)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.13.2))(vue@3.4.21))(fuse.js@6.6.2)(ioredis@5.3.2)(rollup@4.13.2)(terser@5.30.1)(unocss@0.58.9(postcss@8.4.38)(rollup@4.13.2)(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1)))(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1)))(rollup@4.13.2)(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1))':
     dependencies:
-      '@nuxt/kit': 3.11.1(rollup@4.13.2)
+      '@nuxt/kit': 3.11.2(rollup@4.13.2)
       '@nuxt/schema': 3.11.1(rollup@4.13.2)
       execa: 7.2.0
       nuxt: 3.11.1(@parcel/watcher@2.4.1)(@types/node@20.12.2)(@unocss/reset@0.58.9)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.13.2))(vue@3.4.21))(fuse.js@6.6.2)(ioredis@5.3.2)(rollup@4.13.2)(terser@5.30.1)(unocss@0.58.9(postcss@8.4.38)(rollup@4.13.2)(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1)))(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1))
@@ -4736,7 +4789,6 @@ snapshots:
     transitivePeerDependencies:
       - rollup
       - supports-color
-    optional: true
 
   '@nuxt/schema@3.11.1(rollup@4.13.2)':
     dependencies:
@@ -4771,7 +4823,6 @@ snapshots:
     transitivePeerDependencies:
       - rollup
       - supports-color
-    optional: true
 
   '@nuxt/telemetry@2.5.3(rollup@4.13.2)':
     dependencies:
@@ -4798,8 +4849,7 @@ snapshots:
 
   '@nuxt/ui-templates@1.3.1': {}
 
-  '@nuxt/ui-templates@1.3.4':
-    optional: true
+  '@nuxt/ui-templates@1.3.4': {}
 
   '@nuxt/ui@2.15.1(focus-trap@7.5.4)(nuxt@3.11.1(@parcel/watcher@2.4.1)(@types/node@20.12.2)(@unocss/reset@0.58.9)(encoding@0.1.13)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.13.2))(vue@3.4.21))(fuse.js@6.6.2)(ioredis@5.3.2)(rollup@4.13.2)(terser@5.30.1)(unocss@0.58.9(postcss@8.4.38)(rollup@4.13.2)(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1)))(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1)))(rollup@4.13.2)(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1))(vue@3.4.21)':
     dependencies:
@@ -5397,6 +5447,14 @@ snapshots:
       resolve-from: 5.0.0
     transitivePeerDependencies:
       - encoding
+      - supports-color
+
+  '@vesp/nuxt-fontawesome@1.0.4(rollup@4.13.2)':
+    dependencies:
+      '@fortawesome/fontawesome-svg-core': 6.5.2
+      '@nuxt/kit': 3.11.2(rollup@4.13.2)
+    transitivePeerDependencies:
+      - rollup
       - supports-color
 
   '@vitejs/plugin-vue-jsx@3.1.0(vite@5.2.7(@types/node@20.12.2)(terser@5.30.1))(vue@3.4.21)':
