@@ -1,58 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-  @apply text-[12px] md:text-[14px] lg:text-[16px] xl:text-[20px];
-  
-  &::selection{
-    @apply text-white bg-accent;
-  }
+	@apply text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px];
+	
+	&::selection{
+		@apply text-white bg-accent;
+	}
 }
 
 body {
-  @apply box-border bg-bkg selection:bg-accent;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
+	@apply box-border bg-bkg selection:bg-accent;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
 }
 
 .btn-primary {
-  @apply h-12 w-24 rounded-md border-2 bg-primary text-white transition-colors delay-[80ms] hover:border-primary hover:bg-bkg hover:text-primary border-white;
+	@apply h-12 w-24 rounded-md border-2 bg-primary text-white transition-colors delay-[80ms] hover:border-primary hover:bg-bkg hover:text-primary border-white;
 }
 .btn-white {
-  @apply h-12 w-24 rounded-md border-2 bg-bkg text-accent hover:bg-accent hover:text-bkg transition-colors delay-[80ms];
+	@apply h-12 w-24 rounded-md border-2 bg-bkg text-accent hover:bg-accent hover:text-bkg transition-colors delay-[80ms];
 }
 .iconn {
-  @apply text-lg text-gray-500 hover:text-gray-900 dark:hover:text-white md:text-2xl;
+	@apply text-lg text-gray-500 hover:text-gray-900 dark:hover:text-white md:text-2xl;
 }
 
 .basicanimation{
-  @apply transition-all ease-in duration-150;
+	@apply transition-all ease-in duration-150;
 }
 
 .h1 {
-  @apply text-5xl font-extrabold dark:text-white;
+	@apply text-5xl font-extrabold dark:text-white;
 }
 
 .h2 {
-  @apply text-4xl font-bold dark:text-white;
+	@apply text-4xl font-bold dark:text-white;
 }
 
 .h3 {
-  @apply text-3xl font-bold dark:text-white;
+	@apply text-3xl font-bold dark:text-white;
 }
 
 .h4 {
-  @apply text-2xl font-bold dark:text-white;
+	@apply text-2xl font-bold dark:text-white;
 }
 
 .h5 {
-  @apply text-xl font-bold dark:text-white;
+	@apply text-xl font-bold dark:text-white;
 }
 
 .h6 {
-  @apply text-lg font-bold dark:text-white;
+	@apply text-lg font-bold dark:text-white;
 }
 
 .underlineTxt::after {
-  content: "";
-  @apply h-4 bg-fuchsia-400/75 absolute block left-0 bottom-0 w-full -z-10;
+	content: "";
+	@apply h-4 bg-fuchsia-400/75 absolute block left-0 bottom-0 w-full -z-10;
 }

@@ -69,21 +69,24 @@ onMounted(() => {
 						<div class="flex flex-wrap items-center justify-between py-6 md:py-4 md:gap-0">
 							<div class="w-full flex items-center justify-between lg:w-auto">
 								<a href="#" aria-label="logo" draggable="false" class="relative">
-									<img src="/struct360 logo.svg" class="w-32 drop-shadow-2xl" alt="Struct360 logo" draggable="false" />
-									<Icon name="ri:trademark-fill" class="absolute right-[-22px] top-8 text-md text-white" />
+									<img src="/struct360 logo.svg" class="w-32 drop-shadow-2xl" alt="Struct360 logo"
+										draggable="false" />
+									<Icon name="ri:trademark-fill"
+										class="absolute right-[-22px] top-8 text-md text-white" />
 								</a>
 
 								<div class="block max-w-max">
-									<button aria-label="humburger" id="hamburger" class="block relative h-auto lg:hidden basicanimation"
-										:class="mobileMenuOpen ? 'py-5' : 'py-0'
+									<button aria-label="humburger" id="hamburger"
+										class="block relative h-auto lg:hidden basicanimation" :class="mobileMenuOpen ? 'py-5' : 'py-0'
 											" @click="handleClick">
-										<div aria-hidden="true" id="line" class="m-auto h-0.5 w-6 rounded bg-gray-100 transition duration-300"
-											:class="mobileMenuOpen
+										<div aria-hidden="true" id="line"
+											class="m-auto h-0.5 w-6 rounded bg-gray-100 transition duration-300" :class="mobileMenuOpen
 												? 'rotate-45 translate-y-1.5'
 												: ''
 												"></div>
 										<div aria-hidden="true" id="line2"
-											class="m-auto mt-2 h-0.5 w-6 rounded bg-gray-100 transition duration-300" :class="mobileMenuOpen
+											class="m-auto mt-2 h-0.5 w-6 rounded bg-gray-100 transition duration-300"
+											:class="mobileMenuOpen
 												? '-rotate-45 -translate-y-1'
 												: ''
 												"></div>
@@ -99,7 +102,8 @@ onMounted(() => {
 									<ul
 										class="space-y-6 pb-6 tracking-wide font-medium text-gray-800 lg:text-gray-100 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
 										<li v-for="nav in navigation">
-											<NuxtLink :to="nav.href" class="block md:px-3 Link basicanimation">{{ nav.name }}
+											<NuxtLink :to="nav.href" class="block md:px-3 Link basicanimation">{{ nav.name
+											}}
 											</NuxtLink>
 										</li>
 									</ul>
@@ -145,7 +149,7 @@ onMounted(() => {
 						<h1 class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl xl:text-6xl">
 							GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <br>
 							<span
-								class="text-3xl font-bold sm:text-4xl md:text-5xl underlineTxt relative inline-block transition-all ease-in-out duration-500"
+								class="text-3xl font-bold sm:text-4xl md:text-5xl xl:text-6xl underlineTxt relative inline-block transition-all ease-in-out duration-500"
 								v-text="usps[uspidx]" />
 							<br />
 							EXPERTISE
@@ -306,5 +310,4 @@ onMounted(() => {
 	@apply bg-fuchsia-400/75;
 	transition: width 0.5s ease 0s, right 0.5s ease 0s;
 	width: 0;
-}
-</style>
+}</style>
