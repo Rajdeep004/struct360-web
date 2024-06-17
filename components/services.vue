@@ -3,130 +3,130 @@
 		faCircle,
 		faScrewdriverWrench,
 	} from "@fortawesome/free-solid-svg-icons";
-	const isFlipped = ref(false);
+
 	const services = ref(
 		[
 			{
-				title: "Value Engineering/Bid Planning",
+				title: "Value Engineering / Bid Planning",
 				icon: "",
 				caption:
-					"EVERY FOR NEED TO BE PERMITTED AND IT IS ESSENTIAL STEP FOR ANY OWNER AND INVESTOR TO GET IT RIGHT",
+					"Every Project Needs To Be Permitted And It Is An Essential Step For Any Owner And Investor To Get It Right",
 				services: [
-					"DEVELOPMENT PERMIT DRAWINGS",
-					"VALUE ENGINEERING",
-					"COST-CONSTRUCTION MATRIX",
-					"PRE-BID DRAWINGS/MODELING",
-					"PERMIT APPLICATIONS/CHECKLISTS",
+					"Development Permit Drawings",
+					"Value Engineering",
+					"Cost-Construction Matrix",
+					"Pre-Bid Drawings / Modeling",
+					"Permit Applications / Checklists",
 				],
 			},
 			{
-				title: "ARCHITECTURAL RENDERING",
+				title: "Architectural / Rendering",
 				icon: "",
 				caption:
-					"YOUR IMAGINATION OF ANY PROJECT COMES TO LIVE AFTER MODELING AND PROPER VISUALIATION WITH MODERN TECHNOLOGIES",
+					"Your Imagination Of Any Project Comes To Life After Modeling And Proper Visualization With Modern Technologies",
 				services: [
-					"PRELIMINARY DRAWINGS COORDINATION",
-					"3D MODELING WITH BIM INTEGRATION",
-					"DRAWINGS STANDARDS PER IBC/IRC",
-					"3D VISULISATION ",
-					"ANIMATION WALK THROUGH",
-					"AS-BUILT OR EXISTING DEMO DRAWING",
+					"Preliminary Drawings Coordination",
+					"3D Modeling With Bim Integration",
+					"Drawings Standards Per Ibc/Irc",
+					"3D Visualization",
+					"Animation Walk Through",
+					"As-Built Or Existing Demo Drawing",
 				],
 			},
 			{
-				title: "STRUCTURAL ENGINEERING/DRAWINGS",
+				title: "Structural Engineering / Drawings",
 				icon: "",
 				caption:
-					"MAKING YOUR PROJECT EFFICIENT WITH CLIMATE RESILIENT AND SUSTAIBLE WITH PROPER STRUCTURAL SYSTEM",
+					"Making Your Project Efficient With Climate Resilient And Sustainable With Proper Structural System",
 				services: [
-					"BID AND VALUE ENGINEERING",
-					"LOAD CALCULATIONS",
-					"PEMB MODELING AND CHECK",
-					"STEEL STRUCTURAL MODELING/DRAWINGS",
-					"CONCRETE DESIGN",
-					"WOOD/WALL PANEL DESIGN",
-					"INTERIOR/EXTERIOR FRAMING CHECK",
-					"PROTOTYPE/FRANCHISE STRUCTURAL MODELING",
-					"PERMIT PLANNING AND STAMPING FOR ALL US/CANADA REGIONS",
-					"CONSTRUCTION SUPPORT",
-					"SPECIALTY ENGINEERINGS",
+					"Bid And Value Engineering",
+					"Load Calculations",
+					"Pemd Modeling And Check",
+					"Steel Structural Modeling / Drawings",
+					"Concrete Design",
+					"Wood / Wall Panel Design",
+					"Interior / Exterior Framing Check",
+					"Prototype/Franchise Structural Modeling",
+					"Permit Planning And Stamping For All US / Canada Regions",
+					"Construction Support",
+					"Specialty Engineerings",
 				],
 			},
 			{
-				title: "MEP ENGINEERING/DRAWINGS",
+				title: "Mep Engineering / Drawings",
 				icon: "",
 				caption:
-					"MAKING ANY PROJECT SUCCESSFUL, PROPER MEP PLANNING NEED TO BE ESTABLISHED THROUGHT THE PROJECT DURATION AND AFTER CONSTRUCTION ALSO",
+					"Making Any Project Successful, Proper Mep Planning Needs To Be Established Throughout The Project Duration And After Construction Also",
 				services: [
-					"COM CHECK",
-					"MEP PLANS AND DRAWINGS",
-					"RTU PLANS AND FRAMING CHECK",
-					"ENERGY AUDIT",
-					"EV AND SOLAR PLANNING AND DESIGN",
-					"EXISTING AS-BUILT MEP REMODELI",
+					"Com Check",
+					"Mep Plans And Drawings",
+					"Rtu Plans And Framing Check",
+					"Energy Audit",
+					"Ev And Solar Planning And Design",
+					"Existing As-Built Mep Remodelling",
 				],
 			},
 			{
-				title: "AV DESIGN AND ENGINEERING",
+				title: "Av Design And Engineering",
 				icon: "",
 				caption:
-					"EVERY ENTERTAINMENT VENUE NEEDS TO BE WELL PLANNED AND ABLE TO DELIVER TOP QUALITY END PRODUCT FOR PEOPLE TO ENJOY",
+					"Every Entertainment Venue Needs To Be Well Planned And Able To Deliver Top Quality End Product For People To Enjoy",
 				services: [
-					"AV PLANNING",
-					"SCHEDULING",
-					"AV BIM MODELING",
-					"INTEGRATION OF INDUSTRY TOOLS",
-					"AVIXA AND CTS SPECIALTY",
-					"TECHNOLOGY AND AV PLANS",
-					"DRAWINGS",
-					"INTERIOR FRAMING SUPPORT CHECK",
+					"Av Planning",
+					"Scheduling",
+					"Av Bim Modeling",
+					"Integration Of Industry Tools",
+					"Avixa And Cts Specialty",
+					"Technology And Av Plans",
+					"Drawings",
+					"Interior Framing Support Check",
 				],
 			},
 			{
-				title: "CONSTRUCTION DRAWING SET PER PERMIT REQUIREMENTS",
+				title: "Construction Drawing Set Per Permit Requirements",
 				icon: "",
 				caption:
-					"IT IS IMPORTANT TO GET YOUR CONSTRUCTION DRAWINGS AS PER COUNTY/CITY CHECKLIST",
+					"It Is Important To Get Your Construction Drawings As Per County / City Checklist",
 				services: [
-					"STAMPING OF ANY CD DRAWINGS",
-					"PERMIT REQUIREMENTS CONSIDERATION",
-					"APPLICATION CHECKLIST AND DOCUMENT PREPARATIONS",
-					"SPECIFICATION AND PACAKGE PLANNING",
-					"DEVELOPMENT AND CONSTRUCTION PERMIT COORDINATION",
-					"CITY/COUNTY COMMENTS COORDINATION OR APPROVAL",
+					"Stamping Of Any Cd Drawings",
+					"Permit Requirements Consideration",
+					"Application Checklist And Document Preparations",
+					"Specification And Package Planning",
+					"Development And Construction Permit Coordination",
+					"City/County Comments Coordination Or Approval",
 				],
 			},
 			{
-				title: "BIM MODELING AND SUPPORT CLOUD SERVICES",
+				title: "Bim Modeling And Support Cloud Services",
 				icon: "",
 				caption:
-					"GET THE PROJECT IN REAL TIME WITH MODER TECHNOLOGY BEFOR THE CONSTRUCTION",
+					"Get The Project In Real Time With Modern Technology Before The Construction",
 				services: [
-					"3D-4D MODELING",
-					"SCHEDULING AND QUANTITY CHECK",
-					"SCAN TO BIM",
-					"POINT CLOUD CHECK",
-					"EXISTING REAL TIME MODELING",
-					"CLASH DETECTION",
-					"LOD100-500 MODELING AND COORDINATION",
-					"REAL-TIME SITE PLAN DRAWINGS",
-					"CONSTRUCTION ",
-					"CONSTRUCTION SAAS SOFTWARE COORDINATION",
-					"4D SIMULATION",
+					"3D-4D Modeling",
+					"Scheduling And Quantity Check",
+					"Scan To Bim",
+					"Point Cloud Check",
+					"Existing Real Time Modeling",
+					"Clash Detection",
+					"Lod100-500 Modeling And Coordination",
+					"Real-Time Site Plan Drawings",
+					"Construction",
+					"Construction Saas Software Coordination",
+					"4D Simulation",
 				],
 			},
 			{
-				title: "CONSTRUCTION SUPPORT/AS-BUILT DRAWINGS",
+				title: "Construction Support / As-Built Drawings",
 				icon: "",
 				caption:
-					"WE ARE HERE TO SUPPORT WHEN YOUR PROJECT IS STUCK AND NEED AS-BUILT CONSTRUCTION SUPPORT",
+					"We Are Here To Support When Your Project Is Stuck And Need As-Built Construction Support",
 				services: [
-					"TRUSS PACAKGE REVIEW",
-					"SHOP DRAWINGS REVIEW",
-					"SPECIFICATIONS COORDINATION",
-					"AS-BUILT MODELING AND CONSTRUCTION CHECK",
-					"QUICK VALUE ENGINEERING AND MODELING",
-					"CONTRACTOR SPECIFIC QUESTIONS",
+					"Truss Package Review",
+					"Shop Drawings Review",
+					"Specifications Coordination",
+					"As-Built Modeling And Construction Check",
+					"Quick Value Engineering And Modeling",
+					"Contractor Specific Questions",
 				],
 			},
 		].map((it) => {
@@ -149,13 +149,13 @@
 			<h1 class="h1">
 				We are a
 				<span class="h1 underlineTxt relative inline-block after:!bg-accent/50">
-					Customer service
+					Customer Service
 				</span>
-				that provides
+				Organization that provides
 			</h1>
 		</div>
 		<div
-			class="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3"
+			class="mt-8 grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3"
 		>
 			<UCard
 				v-for="(it, index) in services"
@@ -169,7 +169,7 @@
 						:icon="faScrewdriverWrench"
 						class="basicanimation mb-4 text-5xl group-hover:text-accent"
 					/>
-					<h4 class="h4 mb-2">
+					<h4 class="h4 capatalise mb-2">
 						{{ it.isFlipped ? "Our Services" : it.title }}
 					</h4>
 					<ul v-if="it.isFlipped">

@@ -31,8 +31,8 @@
 						</div>
 
 						<div class="space-y-2">
-							<h5 class="h5 transition group-hover:text-accent">Projects</h5>
-							<p class="text-sm text-gray-600 dark:text-gray-300">
+							<h4 class="h4 transition group-hover:text-accent">Projects</h4>
+							<p class="text-gray-600 dark:text-gray-300">
 								We have Completed with 100% accuracy
 							</p>
 						</div>
@@ -60,10 +60,10 @@
 						</div>
 
 						<div class="space-y-2">
-							<h5 class="h5 transition group-hover:text-accent">
+							<h4 class="h4 transition group-hover:text-accent">
 								US & Canada States/Provinces
-							</h5>
-							<p class="text-sm text-gray-600 dark:text-gray-300">
+							</h4>
+							<p class="text-gray-600 dark:text-gray-300">
 								We are licensed for listed area
 							</p>
 						</div>
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 				<div
-					class="group relative bg-white transition hover:z-[1] hover:border-2 hover:border-accent hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800"
+					class="group relative bg-white transition hover:border-2 hover:border-accent hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800"
 				>
 					<div class="relative space-y-8 p-8 py-12">
 						<div
@@ -91,10 +91,10 @@
 						</div>
 
 						<div class="space-y-2">
-							<h5 class="h5 transition group-hover:text-accent">
+							<h4 class="h4 transition group-hover:text-accent">
 								Markets Served
-							</h5>
-							<p class="text-sm text-gray-600 dark:text-gray-300">
+							</h4>
+							<p class="text-gray-600 dark:text-gray-300">
 								We are pioneered for more than listed markets for USA/CANADA
 							</p>
 						</div>

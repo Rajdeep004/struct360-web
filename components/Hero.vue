@@ -5,7 +5,7 @@
 		{ name: "Services", href: "#services" },
 		{ name: "Achievements", href: "#achievements" },
 		{ name: "Markets", href: "#markets" },
-		{ name: "Affilation", href: "#affilation" },
+		{ name: "Affiliation", href: "#affilation" },
 	];
 
 	const navbarRef = ref(null);

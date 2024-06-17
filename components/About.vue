@@ -12,7 +12,7 @@
 	<div
 		id="about"
 		as="section"
-		class="m-4"
+		class="z-20 m-4 mb-16"
 	>
 		<div class="space-y-3">
 			<div class="mb-8 space-y-6 text-center">
