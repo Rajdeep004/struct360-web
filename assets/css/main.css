@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
 	@apply text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px];
-	
-	&::selection{
-		@apply text-white bg-accent;
+
+	&::selection {
+		@apply bg-accent text-white;
 	}
 }
 
@@ -15,17 +15,17 @@ body {
 }
 
 .btn-primary {
-	@apply h-12 w-24 rounded-md border-2 bg-primary text-white transition-colors delay-[80ms] hover:border-primary hover:bg-bkg hover:text-primary border-white;
+	@apply h-12 w-24 rounded-md border-2 border-white bg-primary text-white transition-colors delay-[80ms] hover:border-primary hover:bg-bkg hover:text-primary;
 }
 .btn-white {
-	@apply h-12 w-24 rounded-md border-2 bg-bkg text-accent hover:bg-accent hover:text-bkg transition-colors delay-[80ms];
+	@apply h-12 w-24 rounded-md border-2 bg-bkg text-accent transition-colors delay-[80ms] hover:bg-accent hover:text-bkg;
 }
 .iconn {
-	@apply text-lg text-gray-500 hover:text-gray-900 dark:hover:text-white md:text-2xl;
+	@apply text-lg text-gray-500 hover:text-gray-900 md:text-2xl dark:hover:text-white;
 }
 
-.basicanimation{
-	@apply transition-all ease-in duration-150;
+.basicanimation {
+	@apply transition-all duration-150 ease-in;
 }
 
 .h1 {
@@ -54,5 +54,5 @@ body {
 
 .underlineTxt::after {
 	content: "";
-	@apply h-4 bg-fuchsia-400/75 absolute block left-0 bottom-0 w-full -z-10;
+	@apply absolute bottom-0 left-0 -z-10 block h-4 w-full bg-fuchsia-400/75;
 }

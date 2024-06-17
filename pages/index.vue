@@ -1,24 +1,28 @@
 <script setup>
-const isFormOpen = ref(false);
-watch(isFormOpen, () => {
-    console.log("value of isFormOpen is", isFormOpen.value);
-})
+	const isFormOpen = ref(false);
+	watch(isFormOpen, () => {
+		console.log("value of isFormOpen is", isFormOpen.value);
+	});
 </script>
 
 <template>
-    <div class="space-y-12">
-        <Hero @form="isFormOpen = !isFormOpen" />
-        <button
-            class="px-4 py-2 bg-accent text-white rounded-lg fixed z-50 end-0 -rotate-90 hidden md:inline-flex -mx-6 bottom-48"
-            @click="isFormOpen = true">
-            Inquiry
-        </button>
-        <Inquiry :isOpen="isFormOpen" @toggle="(x) => isFormOpen = x" />
-        <About />
-        <!-- <Projects /> -->
-        <Services />
-        <Achievements />
-        <Affilation class="space-y-24" />
-        <Footer />
-    </div>
+	<div class="space-y-12">
+		<Hero @form="isFormOpen = !isFormOpen" />
+		<button
+			class="fixed bottom-48 end-0 z-50 -mx-6 hidden -rotate-90 rounded-lg bg-accent px-4 py-2 text-white md:inline-flex"
+			@click="isFormOpen = true"
+		>
+			Inquiry
+		</button>
+		<Inquiry
+			:isOpen="isFormOpen"
+			@toggle="(x) => (isFormOpen = x)"
+		/>
+		<About />
+		<!-- <Projects /> -->
+		<Services />
+		<Achievements />
+		<Affilation class="space-y-24" />
+		<Footer />
+	</div>
 </template>

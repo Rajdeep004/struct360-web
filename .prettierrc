@@ -1,0 +1,9 @@
+{
+	"useTabs": true,
+	"tabWidth": 2,
+	"singleAttributePerLine": true,
+	"plugins": ["prettier-plugin-tailwindcss"],
+	"vueIndentScriptAndStyle": true,
+	"tailwindConfig": "./tailwind.config.js",
+	"htmlWhitespaceSensitivity": "ignore"
+}

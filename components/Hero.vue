@@ -1,58 +1,57 @@
 <script setup>
-const navigation = [
-	// { name: "Home", href: "/" },
-	{ name: "About", href: "#about" },
-	{ name: "Services", href: "#services" },
-	{ name: "Achievements", href: "#achievements" },
-	{ name: "Markets", href: "#markets" },
-	{ name: "Affilation", href: "#affilation" },
-];
+	const navigation = [
+		// { name: "Home", href: "/" },
+		{ name: "About", href: "#about" },
+		{ name: "Services", href: "#services" },
+		{ name: "Achievements", href: "#achievements" },
+		{ name: "Markets", href: "#markets" },
+		{ name: "Affilation", href: "#affilation" },
+	];
 
-const navbarRef = ref(null);
-const mobileMenuOpen = ref(false);
-const handleClick = () => {
-	mobileMenuOpen.value = !mobileMenuOpen.value;
-	navbarRef.value.style.height = mobileMenuOpen.value
-		? ` ${navbarRef.value.scrollHeight + 60}px`
-		: `0px`;
-};
-const uspidx = ref(0);
-const usps = [
-	"VALUE ENGINEERING",
-	"ARCHITECTURAL",
-	"STRUCTURAL",
-	"MEP",
-	"BIM MODELING",
-	"CONSTRUCTION SUPPORT",
-	"AV DESIGN",
-	"PERMIT PLANNING",
-	"360 DEGREE",
-];
+	const navbarRef = ref(null);
+	const mobileMenuOpen = ref(false);
+	const handleClick = () => {
+		mobileMenuOpen.value = !mobileMenuOpen.value;
+		navbarRef.value.style.height = mobileMenuOpen.value
+			? ` ${navbarRef.value.scrollHeight + 60}px`
+			: `0px`;
+	};
+	const uspidx = ref(0);
+	const usps = [
+		"VALUE ENGINEERING",
+		"ARCHITECTURAL",
+		"STRUCTURAL",
+		"MEP",
+		"BIM MODELING",
+		"CONSTRUCTION SUPPORT",
+		"AV DESIGN",
+		"PERMIT PLANNING",
+		"360 DEGREE",
+	];
 
-// const bg = ref();
-// const images = [
-//   "img/bgs/bg1.jpeg",
-//   "img/bgs/bg2.jpeg",
-//   "img/bgs/bg3.jpeg",
-//   "img/bgs/bg4.jpeg",
-//   "img/bgs/bg5.png",
-//   "img/bgs/bg6.jpg",
-// ];
-onMounted(() => {
-	// Change background image every 5 seconds
-	// let i = 0;
-	// setInterval(() => {
-	//   bg.value = `background-image: url(${images[i]})`;
-	//   i = i === images.length - 1 ? 0 : i + 1;
-	//   // console.log(bg.value);
-	// }, 5000);
+	// const bg = ref();
+	// const images = [
+	//   "img/bgs/bg1.jpeg",
+	//   "img/bgs/bg2.jpeg",
+	//   "img/bgs/bg3.jpeg",
+	//   "img/bgs/bg4.jpeg",
+	//   "img/bgs/bg5.png",
+	//   "img/bgs/bg6.jpg",
+	// ];
+	onMounted(() => {
+		// Change background image every 5 seconds
+		// let i = 0;
+		// setInterval(() => {
+		//   bg.value = `background-image: url(${images[i]})`;
+		//   i = i === images.length - 1 ? 0 : i + 1;
+		//   // console.log(bg.value);
+		// }, 5000);
 
-	// Change USP every 3 seconds
-	const uspInterval = setInterval(() => {
-		uspidx.value =
-			uspidx.value === usps.length - 1 ? 0 : uspidx.value + 1;
-	}, 4000);
-});
+		// Change USP every 3 seconds
+		const uspInterval = setInterval(() => {
+			uspidx.value = uspidx.value === usps.length - 1 ? 0 : uspidx.value + 1;
+		}, 4000);
+	});
 </script>
 
 <template>
@@ -63,55 +62,92 @@ onMounted(() => {
 	<img src="/img/bgs/bg4.jpeg" hidden />
 	<img src="/img/bgs/bg5.png" hidden />
 	<img src="/img/bgs/bg6.jpg" hidden /> -->
-	<section id="hero" class="transition-all ease-in">
-		<div id="wrapper" class="lg:h-screen">
+	<section
+		id="hero"
+		class="transition-all ease-in"
+	>
+		<div
+			id="wrapper"
+			class="lg:h-screen"
+		>
 			<header>
-				<nav id="header" class="z-50 w-full transition-all ease-in">
+				<nav
+					id="header"
+					class="z-50 w-full transition-all ease-in"
+				>
 					<div class="mx-12 px-6 md:px-12 lg:px-6">
-						<div class="flex flex-wrap items-center justify-between py-6 md:py-4 md:gap-0">
-							<div class="w-full flex items-center justify-between lg:w-auto">
-								<a href="#" aria-label="logo" draggable="false" class="relative">
-									<img src="/struct360 logo.svg" class="w-32 drop-shadow-2xl" alt="Struct360 logo"
-										draggable="false" />
-									<Icon name="ri:trademark-fill"
-										class="absolute right-[-22px] top-8 text-md text-white" />
+						<div
+							class="flex flex-wrap items-center justify-between py-6 md:gap-0 md:py-4"
+						>
+							<div class="flex w-full items-center justify-between lg:w-auto">
+								<a
+									href="#"
+									aria-label="logo"
+									draggable="false"
+									class="relative"
+								>
+									<img
+										src="/struct360 logo.svg"
+										class="w-32 drop-shadow-2xl"
+										alt="Struct360 logo"
+										draggable="false"
+									/>
+									<Icon
+										name="ri:trademark-fill"
+										class="text-md absolute right-[-22px] top-8 text-white"
+									/>
 								</a>
 
 								<div class="block max-w-max">
-									<button aria-label="humburger" id="hamburger"
-										class="block relative h-auto lg:hidden basicanimation" :class="mobileMenuOpen ? 'py-5' : 'py-0'
-											" @click="handleClick">
-										<div aria-hidden="true" id="line"
-											class="m-auto h-0.5 w-6 rounded bg-gray-100 transition duration-300" :class="mobileMenuOpen
-												? 'rotate-45 translate-y-1.5'
-												: ''
-												"></div>
-										<div aria-hidden="true" id="line2"
+									<button
+										aria-label="humburger"
+										id="hamburger"
+										class="basicanimation relative block h-auto lg:hidden"
+										:class="mobileMenuOpen ? 'py-5' : 'py-0'"
+										@click="handleClick"
+									>
+										<div
+											aria-hidden="true"
+											id="line"
+											class="m-auto h-0.5 w-6 rounded bg-gray-100 transition duration-300"
+											:class="mobileMenuOpen ? 'translate-y-1.5 rotate-45' : ''"
+										></div>
+										<div
+											aria-hidden="true"
+											id="line2"
 											class="m-auto mt-2 h-0.5 w-6 rounded bg-gray-100 transition duration-300"
-											:class="mobileMenuOpen
-												? '-rotate-45 -translate-y-1'
-												: ''
-												"></div>
+											:class="mobileMenuOpen ? '-translate-y-1 -rotate-45' : ''"
+										></div>
 									</button>
 								</div>
 							</div>
 
-							<div id="navbar" ref="navbarRef"
-								class="flex h-0 lg:h-auto overflow-hidden lg:flex lg:pt-0 w-full md:space-y-0 lh:p-0 md:bg-white/5 lg:w-auto rounded-lg transition-all duration-300"
-								:class="mobileMenuOpen ? 'py-5' : 'h-0'">
-								<div id="navBox"
-									class="w-full p-6 lg:p-0 bg-white bg-opacity-40 backdrop-blur-md lg:items-center flex flex-col lg:flex-row lg:bg-transparent transition-all ease-in">
+							<div
+								id="navbar"
+								ref="navbarRef"
+								class="lh:p-0 flex h-0 w-full overflow-hidden rounded-lg transition-all duration-300 md:space-y-0 md:bg-white/5 lg:flex lg:h-auto lg:w-auto lg:pt-0"
+								:class="mobileMenuOpen ? 'py-5' : 'h-0'"
+							>
+								<div
+									id="navBox"
+									class="flex w-full flex-col bg-white bg-opacity-40 p-6 backdrop-blur-md transition-all ease-in lg:flex-row lg:items-center lg:bg-transparent lg:p-0"
+								>
 									<ul
-										class="space-y-6 pb-6 tracking-wide font-medium text-gray-800 lg:text-gray-100 lg:pb-0 lg:pr-6 lg:items-center lg:flex lg:space-y-0">
+										class="space-y-6 pb-6 font-medium tracking-wide text-gray-800 lg:flex lg:items-center lg:space-y-0 lg:pb-0 lg:pr-6 lg:text-gray-100"
+									>
 										<li v-for="nav in navigation">
-											<NuxtLink :to="nav.href" class="block md:px-3 Link basicanimation">{{ nav.name
-											}}
+											<NuxtLink
+												:to="nav.href"
+												class="Link basicanimation block md:px-3"
+											>
+												{{ nav.name }}
 											</NuxtLink>
 										</li>
 									</ul>
 
 									<ul
-										class="border-t w-full lg:w-max gap-3 pt-2 lg:pt-0 lg:pl-2 lg:border-t-0 lg:border- flex flex-col lg:gap-0 lg:items-center lg:flex-row">
+										class="lg:border- flex w-full flex-col gap-3 border-t pt-2 lg:w-max lg:flex-row lg:items-center lg:gap-0 lg:border-t-0 lg:pl-2 lg:pt-0"
+									>
 										<!-- <li class="flex w-full lg:max-w-max justify-center">
 											<button
 												type="button"
@@ -126,10 +162,16 @@ onMounted(() => {
 											</button>
 										</li> -->
 
-										<li class="flex w-full lg:max-w-max justify-center">
-											<button type="button" @click="$emit('form', true)" title="Inquiry Now"
-												class="flex w-full py-3 px-6 rounded-lg text-center transition bg-accent lg:bg-white active:bg-fuchsia-700 lg:active:bg-purple-200 focus:bg-fuchsia-500 lg:focus:bg-purple-100 justify-center max-w-lg lg:max-w-max">
-												<span class="block text-sm text-white lg:text-accent font-semibold">
+										<li class="flex w-full justify-center lg:max-w-max">
+											<button
+												type="button"
+												@click="$emit('form', true)"
+												title="Inquiry Now"
+												class="flex w-full max-w-lg justify-center rounded-lg bg-accent px-6 py-3 text-center transition focus:bg-fuchsia-500 active:bg-fuchsia-700 lg:max-w-max lg:bg-white lg:focus:bg-purple-100 lg:active:bg-purple-200"
+											>
+												<span
+													class="block text-sm font-semibold text-white lg:text-accent"
+												>
 													Contact
 												</span>
 											</button>
@@ -145,14 +187,20 @@ onMounted(() => {
 			<div class="relative">
 				<!-- <img class="absolute inset-0 w-full h-full object-cover object-top" src="/background2.jpg" width="400" height="500" alt="hero background image"> -->
 				<div aria-hidden="true" />
-				<div class="relative container m-auto px-6 md:px-12 lg:px-6">
-					<div class="mb-12 pt-40 space-y-16 md:mb-20 md:pt-56 lg:w-8/12 lg:mx-auto">
+				<div class="container relative m-auto px-6 md:px-12 lg:px-6">
+					<div
+						class="mb-12 space-y-16 pt-40 md:mb-20 md:pt-56 lg:mx-auto lg:w-8/12"
+					>
 						<!-- <h6 class="font-medium uppercase tracking-widest text-center text-white">USA | INDIA | CANADA</h6> -->
-						<h1 class="text-white text-center text-3xl font-bold sm:text-4xl md:text-5xl xl:text-6xl">
-							GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR <br>
+						<h1
+							class="text-center text-3xl font-bold text-white sm:text-4xl md:text-5xl xl:text-6xl"
+						>
+							GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR
+							<br />
 							<span
-								class="text-3xl font-bold sm:text-4xl md:text-5xl xl:text-6xl underlineTxt relative inline-block transition-all ease-in-out duration-500"
-								v-text="usps[uspidx]" />
+								class="underlineTxt relative inline-block text-3xl font-bold transition-all duration-500 ease-in-out sm:text-4xl md:text-5xl xl:text-6xl"
+								v-text="usps[uspidx]"
+							/>
 							<br />
 							EXPERTISE
 						</h1>
@@ -277,40 +325,42 @@ onMounted(() => {
 </template>
 
 <style scoped lang="postcss">
-#hero {
-	background-image: url("/assets/img/bg.jpg");
-	background-position: center center;
-	transition: all 2s ease-in-out;
-	@apply bg-cover;
+	#hero {
+		background-image: url("/assets/img/bg.jpg");
+		background-position: center center;
+		transition: all 2s ease-in-out;
+		@apply bg-cover;
 
-	#wrapper {
-		@apply backdrop-blur-sm bg-black/25;
+		#wrapper {
+			@apply bg-black/25 backdrop-blur-sm;
+		}
 	}
-}
 
-.Link {
-	text-decoration: none;
-	display: inline-block;
-	@apply p-0 md:p-4;
-	/* padding: 15px; */
-	position: relative;
-}
+	.Link {
+		text-decoration: none;
+		display: inline-block;
+		@apply p-0 md:p-4;
+		/* padding: 15px; */
+		position: relative;
+	}
 
-.Link:hover::after {
-	width: 100%;
-	left: 0;
-}
+	.Link:hover::after {
+		width: 100%;
+		left: 0;
+	}
 
-.Link::after {
-	background: none repeat scroll 0 0 transparent;
-	bottom: 0;
-	content: "";
-	display: block;
-	height: 4px;
-	left: 0;
-	position: absolute;
-	@apply bg-fuchsia-400/75;
-	transition: width 0.5s ease 0s, right 0.5s ease 0s;
-	width: 0;
-}
+	.Link::after {
+		background: none repeat scroll 0 0 transparent;
+		bottom: 0;
+		content: "";
+		display: block;
+		height: 4px;
+		left: 0;
+		position: absolute;
+		@apply bg-fuchsia-400/75;
+		transition:
+			width 0.5s ease 0s,
+			right 0.5s ease 0s;
+		width: 0;
+	}
 </style>
