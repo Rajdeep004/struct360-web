@@ -26,8 +26,8 @@
 					"Your Imagination Of Any Project Comes To Life After Modeling And Proper Visualization With Modern Technologies",
 				services: [
 					"Preliminary Drawings Coordination",
-					"3D Modeling With Bim Integration",
-					"Drawings Standards Per Ibc/Irc",
+					"3D Modeling With BIM Integration",
+					"Drawings Standards Per IBC/IRC",
 					"3D Visualization",
 					"Animation Walk Through",
 					"As-Built Or Existing Demo Drawing",
@@ -41,43 +41,43 @@
 				services: [
 					"Bid And Value Engineering",
 					"Load Calculations",
-					"Pemd Modeling And Check",
+					"PEMB Modeling And Check",
 					"Steel Structural Modeling / Drawings",
 					"Concrete Design",
 					"Wood / Wall Panel Design",
 					"Interior / Exterior Framing Check",
-					"Prototype/Franchise Structural Modeling",
+					"Prototype / Franchise Structural Modeling",
 					"Permit Planning And Stamping For All US / Canada Regions",
 					"Construction Support",
 					"Specialty Engineerings",
 				],
 			},
 			{
-				title: "Mep Engineering / Drawings",
+				title: "MEP Engineering / Drawings",
 				icon: "",
 				caption:
-					"Making Any Project Successful, Proper Mep Planning Needs To Be Established Throughout The Project Duration And After Construction Also",
+					"Making Any Project Successful, Proper MEP Planning Needs To Be Established Throughout The Project Duration And After Construction Also",
 				services: [
 					"Com Check",
-					"Mep Plans And Drawings",
-					"Rtu Plans And Framing Check",
+					"MEP Plans And Drawings",
+					"RTU Plans And Framing Check",
 					"Energy Audit",
-					"Ev And Solar Planning And Design",
-					"Existing As-Built Mep Remodelling",
+					"EV And Solar Planning And Design",
+					"Existing As-Built MEP Remodelling",
 				],
 			},
 			{
-				title: "Av Design And Engineering",
+				title: "AV Design And Engineering",
 				icon: "",
 				caption:
 					"Every Entertainment Venue Needs To Be Well Planned And Able To Deliver Top Quality End Product For People To Enjoy",
 				services: [
-					"Av Planning",
+					"AV Planning",
 					"Scheduling",
-					"Av Bim Modeling",
+					"AV BIM Modeling",
 					"Integration Of Industry Tools",
-					"Avixa And Cts Specialty",
-					"Technology And Av Plans",
+					"AVIXA And CTS Specialty",
+					"Technology And AV Plans",
 					"Drawings",
 					"Interior Framing Support Check",
 				],
@@ -88,7 +88,7 @@
 				caption:
 					"It Is Important To Get Your Construction Drawings As Per County / City Checklist",
 				services: [
-					"Stamping Of Any Cd Drawings",
+					"Stamping Of Any CD Drawings",
 					"Permit Requirements Consideration",
 					"Application Checklist And Document Preparations",
 					"Specification And Package Planning",
@@ -97,18 +97,18 @@
 				],
 			},
 			{
-				title: "Bim Modeling And Support Cloud Services",
+				title: "BIM Modeling And Support Cloud Services",
 				icon: "",
 				caption:
 					"Get The Project In Real Time With Modern Technology Before The Construction",
 				services: [
 					"3D-4D Modeling",
 					"Scheduling And Quantity Check",
-					"Scan To Bim",
+					"Scan To BIM",
 					"Point Cloud Check",
 					"Existing Real Time Modeling",
 					"Clash Detection",
-					"Lod100-500 Modeling And Coordination",
+					"LOD 100-500 Modeling And Coordination",
 					"Real-Time Site Plan Drawings",
 					"Construction",
 					"Construction Saas Software Coordination",
@@ -162,7 +162,7 @@
 				:key="index"
 				@mouseover="it.isFlipped = true"
 				@mouseleave="it.isFlipped = false"
-				class="flip-card basicanimation group max-w-md justify-items-center rounded-none bg-zinc-100 p-4 hover:z-20 hover:-mt-4 hover:mb-4 hover:ring-2 hover:ring-accent"
+				class="flip-card basicanimation group max-w-md justify-items-center rounded-none bg-zinc-100 p-4 tabular-nums hover:z-20 hover:-mt-4 hover:mb-4 hover:ring-2 hover:ring-accent"
 			>
 				<div class="flip-card-inner transition-all ease-in-out">
 					<font-awesome
@@ -172,7 +172,10 @@
 					<h4 class="h4 capatalise mb-2">
 						{{ it.isFlipped ? "Our Services" : it.title }}
 					</h4>
-					<ul v-if="it.isFlipped">
+					<ul
+						v-if="it.isFlipped"
+						class="text-gray-600"
+					>
 						<li
 							v-for="i in it.services"
 							v-text="i"

@@ -32,7 +32,7 @@
 						<h6 class="h5">Head Office</h6>
 						<a
 							class="text-lg hover:underline"
-							href="https://maps.app.goo.gl/9yaLg4voLmLJE7oc9"
+							href="https://maps.app.goo.gl/ueUEBCc2YPf176nA9"
 						>
 							<!-- <Icon
 								name="material-symbols:location-on-rounded"

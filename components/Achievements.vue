@@ -15,10 +15,10 @@
 				</h1>
 			</div>
 			<div
-				class="mt-16 grid divide-x divide-y divide-gray-100 overflow-hidden border border-zinc-100 sm:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3 dark:divide-gray-700 dark:border-gray-700"
+				class="mt-16 grid overflow-hidden border border-zinc-100 sm:grid-cols-2 lg:grid-cols-3"
 			>
 				<div
-					class="hover:shadow-grey-600/10 group relative bg-white transition hover:z-[1] hover:border-2 hover:border-accent hover:shadow-2xl dark:bg-gray-800"
+					class="hover:shadow-grey-600/10 group relative bg-white transition hover:z-[1] hover:!border-2 hover:!border-accent hover:shadow-2xl"
 				>
 					<div class="relative space-y-8 p-8 py-12">
 						<div
@@ -45,7 +45,7 @@
 					</div>
 				</div>
 				<div
-					class="group relative bg-white transition hover:z-[1] hover:border-2 hover:border-accent hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800"
+					class="hover:shadow-grey-600/10 group relative bg-white transition hover:z-[2] hover:!border-2 hover:!border-accent hover:shadow-2xl"
 				>
 					<div class="relative space-y-8 p-8 py-12">
 						<div
@@ -76,7 +76,7 @@
 					</div>
 				</div>
 				<div
-					class="group relative bg-white transition hover:border-2 hover:border-accent hover:shadow-2xl hover:shadow-gray-600/10 dark:bg-gray-800"
+					class="hover:shadow-grey-600/10 group relative bg-white transition hover:z-[3] hover:!border-2 hover:!border-accent hover:shadow-2xl"
 				>
 					<div class="relative space-y-8 p-8 py-12">
 						<div
