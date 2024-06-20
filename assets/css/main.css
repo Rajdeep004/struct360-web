@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-	@apply text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px];
+	@apply text-[12px] md:text-[14px] lg:text-[16px];
 
 	&::selection {
 		@apply bg-accent text-white;
