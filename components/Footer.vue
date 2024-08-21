@@ -39,7 +39,7 @@
 								class="text-accent text-2xl"
 							/> -->
 							121, Fortune Business Hub, Near Shell Petrol pump, Science City,
-							Ahmedabad 380059
+							Ahmedabad 380060
 						</a>
 					</div>
 
