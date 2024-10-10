@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 		"nuxt-swiper",
 		"@vesp/nuxt-fontawesome",
 	],
-	plugins: ["~/plugins/ga.client.ts"],
+	plugins: ["~/plugins/ga.client.js"],
 	app: {
 		head: {
 			script: [
