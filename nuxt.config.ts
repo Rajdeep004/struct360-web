@@ -17,7 +17,7 @@ export default defineNuxtConfig({
 		head: {
 			script: [
 				{
-					src: "https://www.googletagmanager.com/gtag/js?id=G-4QMWEQCWKR", // Replace with your Google Analytics ID
+					src: "https://www.googletagmanager.com/gtag/js?id=G-M6RZSYPBYV", // Replace with your Google Analytics ID
 					async: true,
 				},
 				{
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 						window.dataLayer = window.dataLayer || [];
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
-						gtag('config', 'G-4QMWEQCWKR');
+						gtag('config', 'G-M6RZSYPBYV');
 					`,
 					type: "text/javascript",
 				},
