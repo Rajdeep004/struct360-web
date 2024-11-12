@@ -157,7 +157,7 @@
 						Innovative
 					</span>
 					Design
-				</h1>
+				</h2>
 			</div>
 			<div class="flex flex-wrap items-center justify-center gap-16">
 				<h3 class="h3 capitalize text-accent">
