@@ -148,13 +148,13 @@ const services = ref(
 	<div id="services" as="section" class="m-4 flex flex-col items-center justify-center">
 		<div class="mb-8 space-y-6 text-center">
 			<h6 class="font-medium uppercase tracking-widest">Our Services</h6>
-			<h1 class="h1">
+			<h2 class="h1">
 				We are a
 				<span class="h1 underlineTxt relative inline-block after:!bg-accent/50">
 					Customer Service
 				</span>
 				Organization that provides
-			</h1>
+			</h2>
 		</div>
 		<div class="mt-8 grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3">
 			<UCard v-for="(it, index) in services" :key="index" @mouseover="it.isFlipped = true"

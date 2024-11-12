@@ -73,7 +73,7 @@ const submitForm = async () => {
 								</div>
 								<form action="https://formsubmit.co/info@struct360.com" method="POST"
 									class="card-body space-y-2 lg:w-1/2">
-									<h1 class="h3 lg:h1 mb-8">Inquiry Now!</h1>
+									<h2 class="h3 lg:h1 mb-8">Inquiry Now!</h2>
 									<UFormGroup label="Name">
 										<UInput placeholder="Peter John" type="text" name="Name"
 											icon="i-heroicons-user-circle" v-model="formdata.name" />

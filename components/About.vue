@@ -17,12 +17,12 @@
 		<div class="space-y-3">
 			<div class="mb-8 space-y-6 text-center">
 				<h6 class="font-medium uppercase tracking-widest">About us</h6>
-				<h1 class="h1">
+				<h2 class="h1">
 					Adding Value to Your
 					<span class="h1 underlineTxt inline- relative after:!bg-accent/50">
 						Construction Project
 					</span>
-				</h1>
+				</h2>
 			</div>
 			<p class="container mx-auto text-justify">
 				Any delay in construction project due to improper coordination between

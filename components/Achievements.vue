@@ -6,13 +6,13 @@
 		<div class="m-auto px-6 xl:container md:px-12">
 			<div class="space-y-6 text-center">
 				<h6 class="font-medium uppercase tracking-widest">Achievements</h6>
-				<h1 class="h1">
+				<h2 class="h1">
 					Delivering
 					<span class="h1 underlineTxt relative after:!bg-accent/50">
 						Excellence
 					</span>
 					with Our Expertise
-				</h1>
+				</h2>
 			</div>
 			<div
 				class="mt-16 grid overflow-hidden border border-zinc-100 sm:grid-cols-2 lg:grid-cols-3"

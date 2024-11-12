@@ -149,7 +149,7 @@
 		>
 			<div class="space-y-6 text-center">
 				<h6 class="font-medium uppercase tracking-widest">MARKETS SERVING</h6>
-				<h1 class="h1 capitalize">
+				<h2 class="h1 capitalize">
 					Centering With
 					<span
 						class="h1 underlineTxt relative inline-block capitalize after:!bg-accent/50"
@@ -171,7 +171,7 @@
 				<h6 class="font-medium uppercase tracking-widest">
 					Engineering Technology
 				</h6>
-				<h1 class="h1 capitalize">
+				<h2 class="h1 capitalize">
 					Utilizing Industry
 					<span
 						class="h1 underlineTxt relative inline-block capitalize after:!bg-accent/50"
@@ -179,7 +179,7 @@
 						Leading
 					</span>
 					Software
-				</h1>
+				</h2>
 			</div>
 			<div class="flex flex-wrap items-center justify-center gap-16">
 				<img
@@ -201,7 +201,7 @@
 				<h6 class="font-medium uppercase tracking-widest">
 					MEMBERSHIPS & AFFILIATIONS
 				</h6>
-				<h1 class="h1 capitalize">
+				<h2 class="h1 capitalize">
 					Colloborating With
 					<span
 						class="h1 underlineTxt relative inline-block after:!bg-accent/50"
@@ -209,7 +209,7 @@
 						Different
 					</span>
 					Organizations
-				</h1>
+				</h2>
 			</div>
 			<div class="flex flex-wrap items-center justify-center gap-16">
 				<img
