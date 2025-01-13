@@ -3,8 +3,8 @@
 		faPenToSquare,
 		faHandshake,
 		faBuilding,
-		faMedal,
 	} from "@fortawesome/free-regular-svg-icons";
+	import { faMedal } from "@fortawesome/free-solid-svg-icons";
 	const features = [
 		{
 			title: "Expertise in Building Codes",
