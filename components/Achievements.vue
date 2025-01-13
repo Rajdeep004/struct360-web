@@ -21,11 +21,9 @@
 					<div class="relative space-y-8 p-8 py-12">
 						<div
 							aria-hidden="true"
-							class="flex h-24 w-24 items-center justify-center rounded-full bg-pink-50 dark:bg-gray-700"
+							class="flex h-24 w-24 items-center justify-center rounded-full bg-accent/10"
 						>
-							<span class="text-3xl font-bold text-pink-600 dark:text-pink-300">
-								500+
-							</span>
+							<span class="text-3xl font-bold text-accent">500+</span>
 						</div>
 
 						<div class="space-y-2">
@@ -53,13 +51,9 @@
 					<div class="relative space-y-8 p-8 py-12">
 						<div
 							aria-hidden="true"
-							class="flex h-24 w-24 items-center justify-center rounded-full bg-amber-50 dark:bg-gray-700"
+							class="flex h-24 w-24 items-center justify-center rounded-full bg-accent/10"
 						>
-							<span
-								class="text-4xl font-bold text-amber-600 dark:text-pink-300"
-							>
-								15+
-							</span>
+							<span class="text-4xl font-bold text-accent">15+</span>
 						</div>
 
 						<div class="space-y-2">
@@ -89,13 +83,9 @@
 					<div class="relative space-y-8 p-8 py-12">
 						<div
 							aria-hidden="true"
-							class="flex h-24 w-24 items-center justify-center rounded-full bg-green-50 dark:bg-gray-700"
+							class="flex h-24 w-24 items-center justify-center rounded-full bg-accent/10"
 						>
-							<span
-								class="text-4xl font-bold text-green-600 dark:text-green-300"
-							>
-								10+
-							</span>
+							<span class="text-4xl font-bold text-accent">10+</span>
 						</div>
 
 						<div class="space-y-2">
