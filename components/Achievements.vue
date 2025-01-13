@@ -8,9 +8,7 @@
 				<h6 class="font-medium uppercase tracking-widest">Achievements</h6>
 				<h2 class="h1">
 					Delivering
-					<span class="h1 underlineTxt relative after:!bg-accent/50">
-						Excellence
-					</span>
+					<span class="h1 underlineTxt">Excellence</span>
 					with Our Expertise
 				</h2>
 			</div>
@@ -33,7 +31,12 @@
 						<div class="space-y-2">
 							<h4 class="h4 transition group-hover:text-accent">Projects</h4>
 							<p class="text-gray-600 dark:text-gray-300">
-								We have Completed with 100% accuracy
+								We have successfully completed over 500 projects, spanning
+								commercial, residential, and industrial developments. With our
+								expertise in structural engineering, BIM modeling, and wood
+								framing, we guarantee that each project adheres to local codes
+								while upholding the highest standards of safety, efficiency, and
+								sustainability.
 							</p>
 						</div>
 						<!-- <a href="#" class="flex items-center justify-between group-hover:text-accent">
@@ -64,7 +67,12 @@
 								US & Canada States/Provinces
 							</h4>
 							<p class="text-gray-600 dark:text-gray-300">
-								We are licensed for listed area
+								STRUCT360 operates in more than 15 regions, including
+								California, Texas, Ontario, and British Columbia. We offer a
+								range of services from drywall design to truss bracing and BIM
+								coordination, utilizing advanced tools like AutoCAD, Revit, and
+								Enercalc to deliver innovative solutions for the construction
+								markets in both the United States and Canada.
 							</p>
 						</div>
 						<!-- <a href="#" class="flex items-center justify-between group-hover:text-accent">
@@ -95,7 +103,14 @@
 								Markets Served
 							</h4>
 							<p class="text-gray-600 dark:text-gray-300">
-								We are pioneered for more than listed markets for USA/CANADA
+								We offer specialized solutions across various markets in the USA
+								and Canada, encompassing commercial developments, residential
+								projects, industrial facilities, healthcare institutions, and
+								hospitality spaces. From designing efficient office buildings
+								and sustainable homes to creating innovative hospitals and
+								hotels, our commitment to precision, functionality, and
+								compliance guarantees that every project meets the highest
+								standards of quality and performance.
 							</p>
 						</div>
 						<!-- <a href="#" class="flex items-center justify-between group-hover:text-accent">

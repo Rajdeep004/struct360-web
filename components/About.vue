@@ -19,9 +19,7 @@
 				<h6 class="font-medium uppercase tracking-widest">About us</h6>
 				<h2 class="h1">
 					Adding Value to Your
-					<span class="h1 underlineTxt inline- relative after:!bg-accent/50">
-						Construction Project
-					</span>
+					<span class="h1 underlineTxt">Construction Project</span>
 				</h2>
 			</div>
 			<p class="container mx-auto text-justify">

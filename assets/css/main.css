@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-	@apply text-[12px] md:text-[14px] lg:text-[16px];
+	@apply text-[14px] lg:text-[16px];
 
 	&::selection {
 		@apply bg-accent text-white;
@@ -29,30 +29,34 @@ body {
 }
 
 .h1 {
-	@apply text-5xl font-extrabold dark:text-white;
+	@apply text-5xl font-extrabold;
 }
 
 .h2 {
-	@apply text-4xl font-bold dark:text-white;
+	@apply text-4xl font-bold;
 }
 
 .h3 {
-	@apply text-3xl font-bold dark:text-white;
+	@apply text-3xl font-bold;
 }
 
 .h4 {
-	@apply text-2xl font-bold dark:text-white;
+	@apply text-2xl font-bold;
 }
 
 .h5 {
-	@apply text-xl font-bold dark:text-white;
+	@apply text-xl font-bold;
 }
 
 .h6 {
-	@apply text-lg font-bold dark:text-white;
+	@apply text-lg font-bold;
+}
+
+.underlineTxt {
+	@apply relative;
 }
 
 .underlineTxt::after {
 	content: "";
-	@apply absolute bottom-0 left-0 -z-10 block h-4 w-full bg-fuchsia-400/75;
+	@apply absolute bottom-0 left-0 -z-10 block h-4 w-full bg-accent/50;
 }

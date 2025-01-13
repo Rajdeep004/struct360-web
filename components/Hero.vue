@@ -191,18 +191,22 @@
 					<div
 						class="mb-12 space-y-16 pt-40 md:mb-20 md:pt-56 lg:mx-auto lg:w-8/12"
 					>
-						<!-- <h6 class="font-medium uppercase tracking-widest text-center text-white">USA | INDIA | CANADA</h6> -->
-						<h1
-							class="text-center text-3xl font-bold text-white sm:text-4xl md:text-5xl xl:text-6xl"
+						<!-- <h6
+							class="text-center font-medium uppercase tracking-widest text-white"
 						>
-							GET YOUR CONSTRUCTION ENGINEERING SOLUTIONS WITH OUR
+							USA | INDIA | CANADA
+						</h6> -->
+						<h1
+							class="text-center text-3xl font-bold uppercase tracking-wide text-white sm:text-4xl md:text-5xl xl:text-6xl"
+						>
+							Get your construction engineering solutions with our
 							<br />
 							<span
-								class="underlineTxt relative inline-block text-3xl font-bold transition-all duration-500 ease-in-out sm:text-4xl md:text-5xl xl:text-6xl"
+								class="underlineTxt inline-block text-3xl font-bold transition-all duration-500 ease-in-out after:!bg-fuchsia-400/75 sm:text-4xl md:text-5xl xl:text-6xl"
 								v-text="usps[uspidx]"
 							/>
 							<br />
-							EXPERTISE
+							Expertise
 						</h1>
 
 						<!-- <form action="" class="w-full">

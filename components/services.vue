@@ -1,17 +1,16 @@
 <script setup>
-import {
-	faComputer,
-	faHouseChimney,
-	faPallet,
-	faPersonDigging,
-	faRulerCombined,
-	faScrewdriverWrench,
-	faSitemap,
-	faVideo,
-} from "@fortawesome/free-solid-svg-icons";
+	import {
+		faComputer,
+		faHouseChimney,
+		faPallet,
+		faPersonDigging,
+		faRulerCombined,
+		faScrewdriverWrench,
+		faSitemap,
+		faVideo,
+	} from "@fortawesome/free-solid-svg-icons";
 
-const services = ref(
-	[
+	const services = ref([
 		{
 			title: "Value Engineering / Bid Planning",
 			icon: faRulerCombined,
@@ -135,61 +134,32 @@ const services = ref(
 				"Contractor Specific Questions",
 			],
 		},
-	].map((it) => {
-		return {
-			...it,
-			isFlipped: ref(false),
-		};
-	}),
-);
+	]);
 </script>
 
 <template>
-	<div id="services" as="section" class="m-4 flex flex-col items-center justify-center">
+	<div
+		id="services"
+		as="section"
+		class="m-4 flex flex-col items-center justify-center"
+	>
 		<div class="mb-8 space-y-6 text-center">
 			<h6 class="font-medium uppercase tracking-widest">Our Services</h6>
 			<h2 class="h1">
 				We are a
-				<span class="h1 underlineTxt relative inline-block after:!bg-accent/50">
-					Customer Service
-				</span>
+				<span class="h1 underlineTxt inline-block">Customer Service</span>
 				Organization that provides
 			</h2>
 		</div>
-		<div class="mt-8 grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3">
-			<UCard v-for="(it, index) in services" :key="index" @mouseover="it.isFlipped = true"
-				@mouseleave="it.isFlipped = false"
-				class="flip-card basicanimation group max-w-md justify-items-center rounded-none bg-zinc-100 p-4 tabular-nums hover:z-20 hover:-mt-4 hover:mb-4 hover:ring-2 hover:ring-accent">
-				<div class="flip-card-inner transition-all ease-in-out">
-					<font-awesome :icon="it.icon" class="basicanimation mb-4 text-5xl group-hover:text-accent" />
-					<h4 class="h4 capatalise mb-2">
-						{{ it.isFlipped ? "Our Services" : it.title }}
-					</h4>
-					<ul v-if="it.isFlipped" class="text-gray-600">
-						<li v-for="i in it.services" v-text="i" class="list-disc" />
-					</ul>
-					<p v-else class="text-gray-600" v-text="it.caption" />
-				</div>
-			</UCard>
+		<div
+			class="container mx-auto mt-8 grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3"
+		>
+			<ServiceCard
+				:service="it"
+				v-for="(it, index) in services"
+				:key="index"
+				class=""
+			/>
 		</div>
 	</div>
 </template>
-
-<style scoped>
-.flip-card {
-	perspective: 1000px;
-}
-
-.flip-card-inner {
-	width: 100%;
-	height: 100%;
-	transition: transform 0.75s;
-	transform-style: preserve-3d;
-	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-	backface-visibility: hidden;
-}
-
-.flip-card:hover .flip-card-inner {
-	transform: rotateY(360deg);
-}
-</style>

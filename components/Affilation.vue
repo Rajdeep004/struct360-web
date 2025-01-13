@@ -151,9 +151,7 @@
 				<h6 class="font-medium uppercase tracking-widest">MARKETS SERVING</h6>
 				<h2 class="h1 capitalize">
 					Centering With
-					<span
-						class="h1 underlineTxt relative inline-block capitalize after:!bg-accent/50"
-					>
+					<span class="h1 underlineTxt inline-block capitalize">
 						Innovative
 					</span>
 					Design
@@ -173,11 +171,7 @@
 				</h6>
 				<h2 class="h1 capitalize">
 					Utilizing Industry
-					<span
-						class="h1 underlineTxt relative inline-block capitalize after:!bg-accent/50"
-					>
-						Leading
-					</span>
+					<span class="h1 underlineTxt inline-block capitalize">Leading</span>
 					Software
 				</h2>
 			</div>
@@ -203,11 +197,7 @@
 				</h6>
 				<h2 class="h1 capitalize">
 					Colloborating With
-					<span
-						class="h1 underlineTxt relative inline-block after:!bg-accent/50"
-					>
-						Different
-					</span>
+					<span class="h1 underlineTxt inline-block">Different</span>
 					Organizations
 				</h2>
 			</div>
