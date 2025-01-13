@@ -56,7 +56,7 @@
 			@toggle="(x) => (isFormOpen = x)"
 		/>
 		<About />
-		<WhyStruct360 />
+		<WhyStruct360 class="!mt-12" />
 		<!-- <Projects /> -->
 		<Services class="!mt-36" />
 		<Achievements />

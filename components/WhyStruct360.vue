@@ -34,40 +34,24 @@
 </script>
 
 <template>
-	<section class="container mx-auto px-6 py-20">
-		<div class="gap- mx-auto flex flex-col">
-			<!-- Left Section -->
-			<div class="flex flex-col justify-center pt-8">
-				<div class="mb-8 space-y-6 text-center">
-					<h6 class="font-medium uppercase tracking-widest">Why STRUCT360?</h6>
-					<h2 class="h1">
-						Adding Value to Your
-						<span class="h1 underlineTxt">Construction Project</span>
-					</h2>
-				</div>
-			</div>
-
-			<!-- Right Section -->
-			<div class="">
-				<div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
-					<div
-						v-for="feature in features"
-						:key="feature.title"
-						class="flex items-start gap-4 bg-zinc-100 p-6 hover:ring-2 hover:ring-accent"
-					>
-						<font-awesome
-							:icon="feature.icon"
-							class="text-2xl"
-						/>
-						<div>
-							<h3 class="mb-2 text-lg font-semibold text-black">
-								{{ feature.title }}
-							</h3>
-							<p class="text-sm leading-relaxed text-gray-600">
-								{{ feature.description }}
-							</p>
-						</div>
-					</div>
+	<section class="container mx-auto px-6">
+		<div class="grid grid-cols-1 gap-2 lg:grid-cols-2">
+			<div
+				v-for="feature in features"
+				:key="feature.title"
+				class="flex items-start gap-4 bg-zinc-100 p-6 hover:ring-2 hover:ring-accent"
+			>
+				<font-awesome
+					:icon="feature.icon"
+					class="text-2xl"
+				/>
+				<div>
+					<h3 class="mb-2 text-lg font-semibold text-black">
+						{{ feature.title }}
+					</h3>
+					<p class="text-sm leading-relaxed text-gray-600">
+						{{ feature.description }}
+					</p>
 				</div>
 			</div>
 		</div>
