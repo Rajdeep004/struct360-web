@@ -6,59 +6,59 @@
 		{
 			id: "1",
 			path: affilation_base + "CFSEI.png",
-			alt: "CFSEI Logo",
+			alt: "CFSEI",
 			size: "w-36",
 		},
 		{
 			id: "2",
 			path: affilation_base + "AGC.png",
-			alt: "AGC Logo",
+			alt: "AGC",
 			size: "w-36",
 		},
 		{
 			id: "3",
 			path: affilation_base + "APEGA.png",
-			alt: "APEGA Logo",
+			alt: "APEGA",
 			size: "!w-20",
 		},
 		{
 			id: "4",
 			path: affilation_base + "AISC.png",
-			alt: "AISC Logo",
+			alt: "AISC",
 		},
 		{
 			id: "5",
 			path: affilation_base + "ASCE.png",
-			alt: "ASCE Logo",
+			alt: "ASCE",
 		},
 		{
 			id: "6",
 			path: affilation_base + "AISI.png",
-			alt: "AISI Logo",
+			alt: "AISI",
 		},
 
 		{
 			id: "7",
 			path: affilation_base + "AWC.png",
-			alt: "AWC Logo",
+			alt: "AWC",
 			size: "w-48",
 		},
 		{
 			id: "8",
 			path: affilation_base + "AWCI.svg",
-			alt: "AWCI Logo",
+			alt: "AWCI",
 			size: "w-48",
 		},
 		{
 			id: "9",
 			path: affilation_base + "CWC.png",
-			alt: "AWC Logo",
+			alt: "AWC",
 			size: "w-24",
 		},
 		// {
 		//     id: "10",
 		//     path: affilation_base + "PELS.png",
-		//     alt: "PELS Logo",
+		//     alt: "PELS",
 		//     size: "w-32"
 		// },
 	];
@@ -67,44 +67,44 @@
 		{
 			id: "1",
 			path: software_base + "AutoCAD.png",
-			alt: "AutoCAD Logo",
+			alt: "AutoCAD",
 			size: "w-32",
 		},
 		{
 			id: "2",
 			path: software_base + "Revit.png",
-			alt: "Revit Logo",
+			alt: "Revit",
 			size: "w-28",
 		},
 		{
 			id: "3",
 			path: software_base + "RISA3D.svg",
-			alt: "RISA Logo",
+			alt: "RISA",
 			size: "w-32",
 		},
 		{
 			id: "4",
 			path: software_base + "CSI.svg",
-			alt: "CSI Logo",
+			alt: "CSI",
 			size: "w-40",
 		},
 
 		{
 			id: "5",
 			path: software_base + "Enercalc.png",
-			alt: "Enercalc Logo",
+			alt: "Enercalc",
 			size: "w-40",
 		},
 		{
 			id: "6",
 			path: software_base + "hilti.png",
-			alt: "hilti Logo",
+			alt: "hilti",
 			size: "w-40",
 		},
 		{
 			id: "7",
 			path: software_base + "SST.png",
-			alt: "SST Logo",
+			alt: "SST",
 			size: "w-28",
 		},
 	];
@@ -141,12 +141,10 @@
 
 <template>
 	<section
+		id="markets"
 		class="mx-4 flex snap-y snap-mandatory flex-col items-center justify-center gap-16 lg:mx-2"
 	>
-		<div
-			id="markets"
-			class="snap-center space-y-8"
-		>
+		<div class="snap-center space-y-8">
 			<div class="space-y-6 text-center">
 				<h6 class="font-medium uppercase tracking-widest">MARKETS SERVING</h6>
 				<h2 class="h1 capitalize">
@@ -213,6 +211,10 @@
 			</div>
 		</div>
 	</section>
+	<section
+		id="markets"
+		class="h-screen"
+	></section>
 </template>
 
 <style scoped lang="postcss"></style>

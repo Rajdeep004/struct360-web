@@ -2,11 +2,12 @@
 	const isFormOpen = ref(false);
 
 	useSeoMeta({
-		title: "STRUCT360 - US-Canada Structural and BIM Engineering Solutions",
+		title: "STRUCT360 | US Canada Structural & BIM Engineering Solutions",
 		meta: [
 			{
 				name: "description",
-				content: `Struct360 offers construction services including timber framing, BIM modeling, design and construction solutions. Revit, AutoCAD and Enercalc for efficient work`,
+				content: `STRUCT360 provides expert structural engineering, BIM modeling, construction consulting services across US&Canada, with tools like AutoCAD,Revit,Enercalc
+`,
 			},
 			// Open Graph / Facebook
 			{ property: "og:type", content: "website" },
@@ -36,7 +37,7 @@
 			},
 			{
 				name: "keywords",
-				content: `#WoodFraming #ShearWall #BalloonFraming #WallPanel #Drywall #StudFraming #WoodConnector #TimberFraming #TallWallFraming #WoodTrusses #PreEngineeredWoodTrusses #TrussBracing #ConcreteMasonryUnit #GroutedCMUWall #UngroutedCMUWall #CrawlSpaceFraming #LoadBearingWall #NonLoadBearingWall #BracingWalls #Holdown #Anchor #MezzanineFraming #JoistFraming #RaftersFraming #CeilingFraming #ArmstrongCeiling #GypsumBoardCeiling #PartitionWall #Firewall #FireRatedInsulation #ColdFormedFraming #LightGaugeFraming #CRCBracing #LateralBracing #BottomPlateAnchors #EIFS #Stucco #MetalPanel #StoneVeneer #BrickVeneer #BypassFraming #SlipTrack #SlottedTrack #PDFsAnchor #MasonryAnchor #Dowels #ICFCore #InsulatedConcreteFootingWall #Reinforcement #SteelFraming #SteelJoistInstitute #SteelJoist #CompositeConcreteDeck #CorrugatedConcreteDeck #Foundation #RoofJoistFraming #ParapetFraming #RackStructuralAnalysis #StructuralEngineering #BIMModeling #BIMEngineering #BIM360 #AutodeskConstructionCloud #Revit #AutoCAD #ChiefArchitect #Enercalc`,
+				content: `#StructuralEngineering #EngineeringSolutions #ConstructionExperts #CivilEngineering #StructuralDesign #BuildingInnovation #ConstructionIndustry #SteelStructures #PrefabricatedBuildings #SteelFrameConstruction #ModernConstruction #SmartBuildingSolutions #EngineeringConsultants #InfrastructureDevelopment #BIMTechnology #FutureOfConstruction #IndustrialStructures #EngineeringUSA #ConstructionCanada #StructuralFirmsIndia #CivilEngineeringUSA #TopEngineeringFirm #BestConstructionCompany #HireEngineers #TopStructuralFirm #BestConstructionExperts #ConsultingEngineers #CommercialConstruction #IndustrialEngineering #WoodFraming #ShearWall #BalloonFraming #WallPanel #Drywall #StudFraming #WoodConnector #TimberFraming #TallWallFraming #WoodTrusses #PreEngineeredWoodTrusses #TrussBracing #ConcreteMasonryUni #CrawlSpaceFraming #LoadBearingWall #NonLoadBearingWall #BracingWalls #MezzanineFraming #RaftersFraming #CeilingFraming #ArmstrongCeiling #GypsumBoardCeiling #PartitionWall #Firewall #FireRatedInsulation #ColdFormedFraming #LightGaugeFraming #CRCBracing #LateralBracing #BottomPlateAnchors #EIFS #Stucco #MetalPanel #StoneVeneer #BrickVeneer #BypassFraming #SlipTrack #SlottedTrack #PDFsAnchor #MasonryAnchor #Dowels #ICFCore #InsulatedConcreteFootingWall #Reinforcement #SteelFraming #SteelJoistInstitute #SteelJoist #CompositeConcreteDeck #CorrugatedConcreteDeck #Foundation #RoofJoistFraming #ParapetFraming #RackStructuralAnalysis #BIMModeling #BIMEngineering #BIM360 #AutodeskConstructionCloud #Revit #AutoCAD #ChiefArchitect #Enercalc`,
 			},
 		],
 	});

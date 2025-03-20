@@ -8,7 +8,10 @@
 </script>
 
 <template>
-	<footer class="bg-zinc-100 py-8 text-slate-900">
+	<footer
+		id="footer"
+		class="bg-zinc-100 py-8 text-slate-900"
+	>
 		<div class="container mx-auto px-4 sm:px-6 lg:px-8 lg:py-12">
 			<div
 				class="flex flex-col items-center justify-center gap-8 divide-accent md:flex-row lg:divide-x-2"

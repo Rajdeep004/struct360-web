@@ -9,13 +9,13 @@
 		{
 			title: "Expertise in Building Codes",
 			description:
-				"It is hard to navigate through complex building codes and regulations. STRUCT360 ensures that your project is in line with the latest standards, thereby enhancing safety and performance.",
+				"Navigating complex building codes and structural regulations can be challenging. STRUCT360's structural engineering and BIM consulting services ensure your project complies with the latest industry standards, enhancing safety, efficiency, and performance.",
 			icon: faPenToSquare,
 		},
 		{
 			title: "Commitment to Excellence",
 			description:
-				"Our commitment is from the initial planning to the final handover, always exceeding expectations. Whether your project is big or small, STRUCT360 is a reliable partner with deep industry knowledge and practical experience",
+				"From initial project planning to final handover, STRUCT360 is committed to delivering exceptional structural engineering and BIM solutions. Whether it's a large-scale construction or a small project, our engineering consultants bring deep industry expertise and practical experience to exceed expectations.",
 			icon: faMedal,
 		},
 		{
@@ -27,7 +27,7 @@
 		{
 			title: "Let’s Build Something Remarkable",
 			description:
-				"Beyond delivering projects, we are creating experiences that leave a mark. Partner with us to see how a team that values excellence makes all the difference.",
+				"Beyond just delivering projects, STRUCT360 creates engineering solutions that make a lasting impact. Partner with our expert structural engineers and BIM consultants to experience the difference that precision, innovation, and excellence bring to every project.",
 			icon: faBuilding,
 		},
 	];
@@ -54,16 +54,18 @@
 				</h2>
 			</div>
 			<p class="container mx-auto text-justify">
-				Any delay in construction project due to improper coordination between
-				design consultants??
+				Is Your Construction Project Delayed Due to Poor Coordination Between
+				Structural Engineers & Design Consultants?
 				<br />
 				<br />
-				STRUCT360 provides one-stop services for your whole construction
-				projects under one-roof. Our services range from your initial
-				imagination, bid planning to BIM modeling to construction drawings and
-				final coordination with contractors for any construction issues. Our
-				highly skilled engineers and modelers help and distribute your project
-				workload with efficient engineering methods.
+				STRUCT360 offers expert structural engineering and BIM modeling
+				services, providing one-stop construction solutions for projects across
+				commercial, industrial, and residential sectors. From bid planning to
+				construction drawings and final contractor coordination, our highly
+				skilled engineers deliver efficient project execution. Whether it's
+				steel frame structures, prefabricated buildings, or advanced BIM
+				solutions, we ensure seamless integration and precision-driven
+				engineering methods.
 			</p>
 			<div class="container mx-auto border border-accent pl-16 lg:pl-12">
 				<ul class="flex list-disc flex-col lg:flex-row lg:gap-8">

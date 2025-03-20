@@ -204,6 +204,7 @@
 							<span
 								class="underlineTxt inline-block text-3xl font-bold transition-all duration-500 ease-in-out after:!bg-fuchsia-400/75 sm:text-4xl md:text-5xl xl:text-6xl"
 								v-text="usps[uspidx]"
+								:key="uspidx"
 							/>
 							<br />
 							Expertise
@@ -330,7 +331,7 @@
 
 <style scoped lang="postcss">
 	#hero {
-		background-image: url("/assets/img/bg.jpg");
+		background-image: url("/assets/img/struct360_background.jpg");
 		background-position: center center;
 		transition: all 2s ease-in-out;
 		@apply bg-cover;
