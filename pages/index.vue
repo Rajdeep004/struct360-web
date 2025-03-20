@@ -2,7 +2,7 @@
 	const isFormOpen = ref(false);
 
 	useSeoMeta({
-		title: "STRUCT360 | US Canada Structural & BIM Engineering Solutions",
+		title: "STRUCT360 | US Canada Structural & BIM engineering solutions",
 		meta: [
 			{
 				name: "description",
