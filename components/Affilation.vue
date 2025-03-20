@@ -211,10 +211,6 @@
 			</div>
 		</div>
 	</section>
-	<section
-		id="markets"
-		class="h-screen"
-	></section>
 </template>
 
 <style scoped lang="postcss"></style>
